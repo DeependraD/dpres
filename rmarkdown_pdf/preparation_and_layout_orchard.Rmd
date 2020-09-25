@@ -1,0 +1,190 @@
+---
+title: "Planning and layout of a fruit orchard"
+author: "Deependra Dhakal"
+date: "2018-08-02"
+documentclass: book
+fontsize: 11pt
+output: 
+  bookdown::pdf_document2:
+    toc: yes
+    toc_depth: 3
+    keep_tex: yes
+    includes:
+      in_header: header.tex
+    pandoc_args: --chapters
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(tidy = TRUE, cache = TRUE, 
+                      echo = TRUE, 
+                      tidy.opts = list(width.cutoff=50), 
+                      eval = TRUE, 
+                      fig.show = "hold",
+                      echo = FALSE,
+                      fig.align = "center", 
+                      fig.asp = 0.6, message = FALSE, warning = FALSE)
+options(knitr.kable.NA = "", digits = 3)
+```
+
+
+# Planning and laying out of orchard {-}
+
+Orcharding is a long term investment and needs lot of planning and expertise. While planning and planting a new orchard, one should give utmost attention and care to various aspects like selection of location and site, nature of soil and subsoil, planting of suitable kinds and varieties of fruits, proper planting distance and purchasing of fruit plants from reliable nurseries. Besides wastage of time and energy, mistakes committed intitially on any aspect reduce the returns greatly from investment. Thus one should give utomst attention and care, while planning a new orchard.
+
+## Preparation of land {-}
+
+The land should be cleaned properly for free movement of man and machinery. All the trees, bushes and creepers should be removed. The stubbles should be uprooted to avoid regeneration of growth and obstruction for movement of machines. The soil of the area destined for growing fruit plants needs thorough preparation. A virgin land requires a deep ploughing and harrowing. The land should be repeatedly ploughed and bring the soil to a fine tilth and pulverise the weeds or other undesirable herbs under the soil. The land should be thoroughly harrowed and levelled. While preparing the land, the subsoil which is usually less fertile than the surface soil, should not be disturbed as far as possible. If possible, green manuring crop like daincha, sunhemp, cowpea etc, may be raised and ploughed down during land preparation to enrich the orchard soil and improve its physical condition. In the hills, terraces should be made along the contours.
+
+## Layout plan {-}
+
+Layout: The marking of position of the plant in the field is referred as to layout.
+
+The layout plan of the orchard should be prepared carefully, preferably in consulation with horticultural experts. The orchard layout plan includes the system of planting, provision for orchard paths, roads, water channels and farm building. A sketch of the proposed orchard should be prepared on a paper before the actual planting is taken in hand.
+
+## Systems of planting {-}
+
+The following are the important systems of planting generallly followed on the basis of agro-climatic conditions.
+
+1. **Square system**
+
+It is the most commonly used method and easy to layout in the field. In this system, plant to plant and row to row distance is the same. The plants are at the right angle to each other, every unit of four plants forming a square. This system facilitates the interculture in two directions after the orchard is planted.
+
+2. **Hexagonal system**
+
+In hexagonal system, the trees are planted in the corners of equilateral triangles. Six trees thus form a hexagon with another tree at its centre. This system, though a little difficult for execution but accommodates 15% more plants. Cultivation of land between the tree rows is possible in three directions with this system. This system is generally followed where the land is costly and very fertile with ample provision of irrigation water.
+
+3. **Rectangular system**
+
+In this system, the plot is divided into rectangles instead of squares and trees are planted at the four corners of the rectangle in straight rows running at right angles. Like square system, this system also facilitiates the intereulture in two directions. The only difference is that in this system more plants can be accommodated in the row keeping more space between the rows.
+
+4. **Triangular or Alternate system**
+
+In this sytem, trees are planted as in the square system but the plants in the 2nd, 4th, 6th, and such other alternate rows are planted midway between the 1st, 3rd, 5th, and such other alternate rows. This system provides more open space for the trees and for intercrops. However, it becomes difficult to carry out intercultural operations.
+
+5. **Quincunx or diagonal system**
+
+This system is exactly like the square system but one additional tree is planted in the centre of each square. The number of plants per acre by this system is almost doubled than the square system. Fruit trees like peach, plum, papaya, kinnow, phalsa and guava can be planted as fillers in the permanent orchard of mango, litchi and pear. The planting of filler trees provides an additional income to the grower in the early life of the orchard. The filler trees are uprooted when the main orchard trees start commercial fruiting.
+
+6. **Contour system**
+
+This system is usually followed in the hilly areas with high slepes but it is very much similar to the square/reetangular system. Under such circumstances, the trees may be well planted in lines following the contour of the soil with only a slight slope. Irrigation and cultivation are then practised only across the slope of the land as this practice reduces the chances of soil erosion. In this system layout is done as in square/rectangular system, first by establishing the base line at the lowest level and then marking for the trees should be done from the base to the top. Bench terraces are used where the slope is greater than 10 per cent.
+
+7. **Hedgerow system **
+
+In this system, the distance between the trees in a row is half to one third the distance between rows. This system of planting is followed in Italy where dwarf apple trees are planted in double offset rows due to higher intensity of light.
+
+**Adjacent planting**
+\newline In this system, two plants are placed closely keeping a double space the rows and the next set of plants. This system is followed in the arid zone where moisture supply is limited as well as in the less fertile soils where both moisture and nutrients are not easily available to the plants. This system provides large areas between rows for intercropping.
+
+## Method of layout {-}
+
+For laying out an orchard, according to square system, a base line is first established and the position of the trees is marked along this line putting wooden stakes in the ground. Another base line at right to the first base line, is then marked along with the other edge of the field with the help of a carpenter square or a cross staff.
+
+The right angle can also be drawn with the help of measuring tape. One end of this tape is fixed at 3 m distance from the corner along the first line and the tape is then stretched along the second base line for a distance of 4 m. The diagonal distance between these two points should be 5 m. The wooden stakes are put in the ground at the desired distance along the second line. All the four rows are thus established and staked. Three men, one putting the pegs in the field and other correcting alignment while moving along the base line, can easily stake the whole field.
+
+For laying out of an orchard according to the triangular system, a base line is set on one side of the field as in the square system. A large triangle with a ring in each corner is used. The sides of this triangle are equal to. the distance to be kept of the plants in the orchard. Two of these rings are placed on the stakes of the base line. The position of the third ring indicates the position of the plant in the second row This row is then used as a base line. The whole area is laid out in a similar manner.
+
+## Digging and filling of pits {-}
+
+Marking of pits and planting should always be done with the help of planting board, The guide pegs are installed at both the ends. One metre deep pits of one metre diameter should be dug. Top 30 cm soil should be kept on one side which is used for refilling, the pits as it is considered the fertile soil. Bottom 70 cm soil should be kept on other side which is discarded. The pits should be left exposed for a few days before actual planting. These pits should be refilled with a mixture of top soil, 2-3 baskets of silt and 2-3 baskets of well rotten farmyard mixture. The refilled pits should be watered a few days before planting the tree. To each pit, add 30 g of Lindane 5% dust or 5 ml of Chlorpyriphos 20 EC mixed in about 2 kg soil against white ants.
+
+## Method of planting {-}
+
+Bore holes of suitable size in the centre of the filled pits with the help of planting board. Place the earth ball of a plant in it in such a way that the upper surface has the same level as the ground. Fill loose earth around the bull and press it firmly with the handle of a spade or khurpa. Apply irrigation soon after setting the plants in the pits.
+
+## Planting distance of fruit plants {-}
+
+The spacing given to the fruit trees is generally governed by the different factors like climate and soil, choice of varieties, growth habit of tree, rootstock used, nature of irrigation and pruning technique followed. The spacing may vary according to different systems of planting. Provision of optimum spacing to fruit trees is one of the most important aspect of successful fruit Culture. The fruit plants grow poorly in close spacing, thus, produce small quantity of fruits of inferior quality and suffer heavily from insects-pests and diseases. In case of widerly spaced plantation, there is wastage of valuable orchard land without having any direct benefit on ultimate yield of the orchard. Therefore, optimum spacing is required so that the fruit trees may grow and bear crop properly. Optimum spacing regulates the proper utilization of sunlight, avoids competition in the uptake of nutrients caused by the collision of root systems, and facilitates proper irrigation. The latest technology on high density plantation system where trees are planted at critical spacings for maximum utilization of space is becoming popular.
+
+Although, It is difficult to suggest exact spacing for fruit trees which will suit every locality or soil, given below in Table \@ref(tab:tree-spacing) is the spacing of some important fruit plants which serve the basic guidelie for establishing a new orchard.
+
+```{r tree-spacing}
+knitr::kable(readxl::read_xlsx("./../data/fruit_cultivation.xlsx", sheet = "orchard_spacing", skip = 1),
+             format = "latex", escape = FALSE,
+             booktabs = TRUE, caption = "General spacing of fruit trees in layout of orchard") %>%
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>%
+  kableExtra::column_spec(1:3, width = "4cm") %>%
+  kableExtra::add_indent(c(4,5,6,15,16))
+```
+
+
+## Planting season {-}
+
+The planting season of different fruit crops vary on the basis of their evergreen or deciduous nature.
+
+**Evergreen fruit plants**: There are two planting times for evergreen fruits viz. February-March (spring) and August-September (rainy season). The fruit plants such as citrus, mango and litchi should preferably be planted during september or in the beginning of october when the weather becomes mild and favorable and there is enough moisture in the soil. Kinnoe and ber plants can be transplanted bare rooted during December to february. Guava can also be planted bare-rooted during February-March or August-September. The plants should be defoliated and the roots covered with moist material.
+
+Most of the sub-tropical and tropical evergreen fruit plants are suitably transplanted during the rainy season when the atmospheric humidity is high and sufficient supply of soil moisture is obtained. During this active period of growth, the plants easily penetrate their roots in the soil and get established. High atmospheric humidity during the rainy season helps them to minimize the transpiration loss.
+
+The evergreen plants can also be transplanted during the onset of spring with equal success provided an ample quantity of irrigation water is available. Early regeneration of rootlets due to high temperature and available moisture during this period helps in early establishment of the plants in most of the cases.
+
+**Deciduous fruit plants**: The deciduous fruit plants are planted during the winter when they are dormant. Their planting must be completed before the start of new growth i.e, upto middle January in case of peach and plum and upto middle of February in case of pear and grapes. The bare rooted ber can also be planted during January and up to middle of February.
+
+It would be wise, if the planting operation in deciduous fruit plants could be done well before the dormancy is broken and the plants start their growth afresh during the subsequent period.
+
+Planting should be avoided during hot and dry spells of weather. The fruit trees should preferably be planted in the afternoon and on cloudy and humid days rather than in bright sunshine and dry weather.
+
+## Purchasing fruit plants from nursery {-}
+
+The fruit trees, unlike annual crops, are expected to remain in the field for many years. The choice of kind of fruit shall, however, depend largely on the location of orchard. The varieties, of course, must be selected depending upon the consumer's preference. Since the poor selection of trees may often lead to headaches and bankrupcy. The following points need to be kept in view while purchasing fruit plants.
+
+1. **Health of plant**
+
+- The fruit plants should be healthy, vigorous and free from diseases and insect-pests.
+- True-to-type 0f piants on suitable rootstocks should be purchased.
+- They must have been propagated from progeny trees of proven merit in regard to yield and quality.
+
+2. **Age of plants**
+
+- The age of the plant is usuaily reckoned from the age of scion but it does not imply that these should have been buddeed on old stock.
+- One or two year old fruit plants are ideal for planting.
+- Older plants should not be purchased as they do not establish easily, particu1arly the evergreen fruit plants where the shock of transplanting is greater as compared to the young plants. The prolonged stay in the nursery beds or pots reduces their vigour. The roots become pot bound, especially in the older plants and thus they have a poor transplanting success.
+
+3. **Size of plants**
+
+- The trunk size of one or two years old citrus plants should be 1-5 to 2.5 cm in diameter.
+
+- The budded or grafted plants with weak stock scion union should also be rejected.
+
+4. **Source of supply**
+
+- Never purchase the fruit plants from private nurseries and footpath sellers as they prove to be a very expensive investment in the long run because these plants are generally from poor strains. The growers come to know about the yield and quality of the fruit several years when the plants start bearing.
+
+- The fruit growers should always purchase plants from a nursery of known reputation and honesty, preferably the nurseries of the agricultural university, department of horticulture and government approved nurseries.
+
+- The plants should be reserved well in advance of the actual planting.
+
+- Always purchase 10-20 percent more plants than the actual requirement. These plants should be kept in nursery to fill up gaps which may develop subsequently due to the death of plants.
+
+- The plants should preferably be purchased from nearest nursery as it greatly facilitates their transport, avoids delay in transit and reduces the transport charges.
+
+## Handling and Transportation of Nursery Plants {-}
+
+Plants should be carefully handled during transportation to avoid breakage of earth balls as the plants with broken earth balls are likely to dry up. Before loading the plants (with earth butt) in the vehicle a layer of cushioning material such as paral (rice straw), dried grass or sand should be spread at the bottom. Then place the plants carefully in the vehicle. During long transportation sprinkle water on the foliage to keep these turgid.
+
+Bare rooted plants may be packed in small bundles. The root portion of these bundles should be given mud coating and then wrapped with moist material such as wet gunny bags, paral or polythene sheet to avoid dehydration of feeder roots during transit.
+
+## Care of plants on arrival {-}
+
+The plants should be given utmost care when received. The shock of digging from the nursery is rather severe and they must not be further exposed to the hot sun or the wind. The packing of the plants should be opened or loosened as soon as they are received, otherwise they may be injured due to heating within these packages. The plants should be placed in shade and sprinkled with water until they are planted in the field.
+
+## After Care of Young Plants {-}
+
+The newly planted young fruit plants, being very tender need lot of care and attention for their better survival and growth. The plants should be watered at frequent intervals. However, heavy irrigation should be avoided as stagnation of water in their basins may do more harm than good.
+
+The yound plants need staking so as to make them grow upright and straight. The support should be strong, preferably of bamboo or other wooden logs and should be well fixed in the soil.
+
+Keep examining the young plants and remove all the growth which has taken place below the bud-union. The tying materials still tied at the graft union may also be removed carefully.
+
+Training of the young plants should be given utmost altention for developing proper framework and shape. Remove dead and diseased portions by careful pruning.
+
+The young plants should always be protected against diseases and insects by proper and timely sprays of suitable fungicides/inseclicides. The white ant attack if noted, should be checked by applying chlorpyriphos @ half liter per acre followed by light irrigation.
+
+Nitrogenous fertilizers which are required for growth, should always be given in small split doses to young fruit trees.
+
+Provide adequate protection against vagaries of summer and winter season.
+
+## Hedges/Windbreaks for protection {-}
+
+A good windbreak should be provided on the windward side of orchard well before the orchard is established. Eucalyptus, Jamun, Seedling mango, Mulberry etc. and good windbreak plants. In the spaces between windbreah trees: a hedge may also be planted. _Inga dulcis_ (Jungli julebi), _Lawsonia alba_ (Mehndi), Bouganvillea, Jatti khatti, galgal, karonda, etc. are a few good hedges. Never plant a hedge of citrus species around the citrus orchard.

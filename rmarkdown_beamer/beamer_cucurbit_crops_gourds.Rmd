@@ -1,0 +1,225 @@
+---
+title: "Cucurbit crops: gourds"
+author: 
+  - Deependra Dhakal 
+date: 2019
+output:   
+  beamer_presentation:
+    incremental: false  
+    theme: "Frankfurt"  
+    colortheme: "beaver"
+    toc: true   
+    slide_level: 2
+    keep_tex: true
+    includes:
+      in_header: beamer_header.tex
+classoption: "aspectratio=169"
+header-includes: 
+- \AtBeginSubsection{}
+bibliography: ['../bib/references.bib']
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+require(tidyverse)
+set.seed(453)
+# invalidate cache when the package version changes
+knitr::opts_chunk$set(tidy = FALSE, echo = FALSE, 
+                  message = FALSE, warning = FALSE,
+                  out.width = "45%")
+options(knitr.table.format = "latex")
+options(knitr.kable.NA = "", digits = 2)
+options(kableExtra.latex.load_packages = FALSE)
+```
+
+# Introduction
+
+## Background
+
+- Consist several genera indigenous to Africa, India, Asia, and the Americas.
+- Generally eaten when immature, some edible as they ripe.
+- Cylindrical, discoid, or bottle-shaped.
+- Seeds found in the central cavity.
+- Mostly grown in Asia and parts of Africa.
+
+##
+
+```{r gourds-intro, include=TRUE, results='asis', echo=FALSE}
+gourd_crops <- readxl::read_xlsx("../data/cucurbitaceae.xlsx", sheet = "gourds")
+
+gourd_crops %>% 
+  mutate(`Scientific Name` = str_replace(string = `Scientific Name`, 
+                                         pattern = "(^[:alpha:]*\\s[:alpha:]*)", 
+                                         replacement = "\\\\textit{\\1}")) %>% 
+  knitr::kable(format = "latex", caption = "Nomenclature of gourds", booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::kable_styling(bootstrap_options = "striped")
+```
+
+## Uses
+
+- Sponge gourd upon maturing is fibrous and 
+can be used as rough sponge or scrub pad.
+- Airtight container (Calabash gourd)
+- Can be stored after slice drying for later use as vegetable.
+- Some are even eaten raw.
+
+# Bottle gourd
+
+## Introduction
+
+- Common in Nepal and India, but grown in Ethiopia, Africa, Central America and warmer regions.
+- Fruits' shape resemble to that of a bottle.
+- Mostly yellowish-green or cream colored, relatively soft in texture, with white pulp and large white seeds.
+- Used for making sweets and pickles.
+- Beneficial for jaundice patients, in those with digestive problems, cough, nightblindness, etc.
+- Monoecious annual vine with large oxalate oval leaves and branched tendrils spreading or climbing 3-15m.
+- Foliage pubescent and emits musky odor when bruised.
+- Flowers large white, borne on slender peduncles, open in the evening and may remain open until the middle of the following day.
+- Fruits vary in shape and sizes(10-90cm in length)
+
+## Cultivation: Climate
+
+- Tropical crop(hot and humid climate)
+- Optimum temperature: $24-27^\circ C$
+- Highly sensitive to photoperiod
+- Short day and humid climate promote femaleness
+
+## Cultivation: Soil
+
+- Best on sandy loam with high OM content
+- Well drained
+- pH: 6-7
+- River bed farming is also successful
+
+## Cultivation: Propagation
+
+- Seeds(450-500/100g)
+- Seed retains viability for long periods(upto 34 years)
+
+## Cultivation: Cultural Practices
+
+- Shallow rooted crop
+- Fine bed preparation
+- Direct sowing on raised beds, in furrows, or trenches or pits
+- Two seeds per hill on either sides of raised beds or furrows
+- Spacing: 2.5\*2m or 2-3\*1.5m
+- Pit: 90\*90\*60cm deep, filled with FYM and topsoil
+- 3-4 seeds per pit
+- 45 t/ha FYM
+- 40-60:40-60:60-80 kg/ha NPK
+- Nitrogen in split doses(Basal and at vining stage)
+- Pruning to exert favorable effects on fruit yield
+
+## Cultivation: Interculture
+
+- Shallow interculture operations needed
+- Hand weeding(2-3 times)
+- Pre-emergence herbicide: linuron @ 0.5kg/ha or alachlor 2.5 kg/ha
+
+## Cultivation: Irrigation
+
+- Immediately after seed sowing to promote germination
+- High humidity promotes prolific bearing
+- Irrigation every 3-4 days in warm weather
+
+## Cultivation: Maturity and Harvesting
+
+- Fruit setting increased by maleic hydrazide spray(400 ppm), boron(3 ppm) and calcium (20 ppm)
+- Ready for harvest approx. 60 DAS
+- 12-15 days after fruit set to reach marketable size
+- Picking every 4-5 days
+
+# Bitter gourd
+
+## Cultivation: Climate and Soil
+
+- Grown in tropical or subtropical climates, but warm and hot climate best for growth
+- Most resistant to low temperatures than other cucurbits
+- Optimum temp: $24^\circ C-27^\circ C$
+- Short day promotes female flower production
+- Grow on sandy to loamy soils
+- Optimum pH: 6-6.7
+
+## Cultivation: Propagation
+
+- Seed propagated commercially
+- Have hard seed coat, impermeable to water
+- Heavy seeds, and retain viability for upto 45 years
+- Cultural Practices
+- Seeds sown in raised beds or pits
+- Raised beds: 1.2-1.5m wide beds, 60 cm wide furrows between beds
+- Spacing: 1.5-2m between rows, 60-120cm between plants
+
+##
+
+- Pit planting: 60\*60\*45 cm deep, plants spaced at 1.8-2.4cm apart with two seeds per hill
+- Seed rate: 4.5-6kg/ha
+- Training or staking required, mostly when grown as rainy season crop
+- Bowers erected 6 ft. from ground level using wooden poles. Strong poles 10 ft. in length and 4 cm in diameter fixed 45 cm deep in soil, 5 m apart. All poles connected by wire. 16-gauge wires stretched over the 10-gauge wires 60 cm apart, crosswise.
+- Kniffens may also be prepared by wooden poles and wire
+
+## Cultivation: Fertilization and manuring
+
+- 60-80 kg N, 70-90 kg P, 60-70 kg K per hectare
+- Nitrogen best applied in split doses(latter half \@initial fruit-set stage)
+
+## Cultivation: Irrigation
+
+- First, Immediately after sowing
+- At regular intervals of 5-7 days
+
+## Cultivation: Weed management
+
+- Interculture to ensure proper spread of crop
+- Weedicides: alachlor and butachlor \@2.5 kg ai/ha
+
+## Cultivation: Maturity and harvest
+
+- Crop takes about 55-110 days from seed sowing to first harves
+- Fruits picked while still tender
+- Picking done every 2-3 days
+- Yellowing of fruit indicated ripening, which is unfit for consumption
+- Fruits storable for 35 days under cool and shady conditions
+
+# Pointed gourds
+
+## Cultivation: Propagation
+
+- Crop is dioecious
+- Vegetatively propagated with vine cuttings and root suckers
+- Seed propagation has poor germination
+- 50% plants may be non-fruiting(male) types
+- 10-12% male plants is adequate
+- Generally, early maturing varieties with fewer nodes bear pistillate flowers
+- Cuttings transplanted in August in upland and November in riverbeds
+- Spacing: 2 * 2 m
+- Root cuttings transpalnted in second half of October
+- Vine cuttings of length 1-1.5m cut and folded in a figure of "8" or ring, and planted in pits with mixture of FYM and soil and buried 10 cm deep.
+
+# Snake gourds
+
+# Sponge gourds
+
+# Ash gourds
+
+# Cultivation outline
+
+```{r cultivation-outline, include=TRUE, results='asis', echo=FALSE}
+cucurbits_cultivation <- readxl::read_xlsx("../data/cucurbitaceae.xlsx", sheet = "planting")
+
+cucurbits_cultivation %>% 
+  knitr::kable(format = "latex", 
+               caption = "Cultivation outline of gourds", booktabs = TRUE) %>% 
+  kableExtra::kable_styling(latex_options = "striped", 
+                            font_size = 6) %>% 
+  kableExtra::column_spec(1:9, width = c("5em", "6em", "8em", "8em", "8em", "5em", "5em", "5em", "5em"))
+```
+
+# Bibliography
+
+## References
+
+```{r bib, include=FALSE}
+# create a bib file for the R packages used in this document
+# knitr::write_bib(c('base', 'rmarkdown', "knitr", "tidyverse"), file = '../bib/references.bib')
+```

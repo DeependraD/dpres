@@ -1,0 +1,68 @@
+#scientificn {
+   color: blue;
+   font-size: 1.4;
+   font-style: italic;
+   text-align: center;
+}
+
+.scrollable {
+    overflow-y: auto  !important;
+    overflow-x: hidden !important;
+    height: 700px;
+}
+
+.reveal section h2 {
+  color: blue;
+  font-size: 2.5em;
+}
+
+.reveal section h1 {
+  color: #21913d;
+  font-size: 3.5em;
+}
+
+.pic_by_text {
+    height: 40%;
+    width: 100%;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+.pic_side {
+    width: 50%;
+    float:left; /* add this */
+}
+
+.text_side {
+    padding-top: 8%  !important;
+    text-align: center;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+
+.reveal section .fragment .highlight-green {
+  color: green;
+  font-size: 2;
+  opacity: 0.8;
+}
+
+.reveal section .fragment .highlight-red {
+  color: red;
+  font-size: 2;
+  opacity: 0.8;
+}
+
+.reveal section .fragment .highlight-blue {
+  color: blue;
+  font-size: 2;
+  opacity: 0.8;
+}
+
+.reveal h3 { 
+  font-size: 100px;
+  color: blue;
+}
+
+.reveal ul, 
+.reveal ol {
+    font-size: 33px;
+    list-style-type: square;
+}

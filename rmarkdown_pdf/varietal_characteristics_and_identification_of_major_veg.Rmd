@@ -1,0 +1,148 @@
+---
+title: "Identification and characteristics of major vegetable crops"
+author: "Deependra Dhakal"
+date: "`r Sys.Date()`"
+output:
+  bookdown::pdf_document2:
+    toc: yes
+    toc_depth: 3
+    keep_tex: yes
+    includes:
+      in_header: header.tex
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(tidy = TRUE, cache = TRUE, 
+                      echo = FALSE, fig.width = 5, 
+                      fig.align = "center", out.width='.45\\linewidth', 
+                      fig.keep = "all", fig.height = 3.5, fig.show = "hold")
+options(knitr.kable.NA = "")
+```
+
+
+# Introduction {-}
+
+Vegetable crops are generally annual plants with a short growing period. They are cultivated for their edible herbaceous vegetative parts -- Leaf, shoot, stem, root, inflorescence, fruits etc., or their modifications. Some crops valued for their modified vegetative parts, and consumed as vegetables are enlisted in Table \@ref(tab:vegetative-mod).
+
+```{r vegetative-mod, results="asis"}
+veg_mod <- readxl::read_xlsx("./data/field_preparation.xlsx", sheet = "modification", 
+                  col_names = TRUE) %>% 
+  mutate_at(vars(starts_with("modifi")), as_factor)
+
+veg_mod %>% 
+  mutate_at(.vars = vars(contains("modif")), 
+            function(x) kableExtra::cell_spec(x, "latex", color = "white", align = "c", angle = 15,
+                                  background = factor(x, levels = levels(x), 
+                                                      RColorBrewer::brewer.pal(n = length(levels(x)), 
+                                                                               name = "Paired")))) %>%
+  knitr::kable(caption = "Modification of plant parts used as vegetables", 
+               format = "latex", booktabs = TRUE, escape = FALSE, longtable = TRUE) %>% 
+  kableExtra::kable_styling(latex_options = c("striped", "repeat_header"), full_width = FALSE, 
+                            position = "center", font_size = 12) %>% 
+  kableExtra::row_spec(row = 0, italic = TRUE, bold = TRUE, hline_after = TRUE) %>% 
+  kableExtra::column_spec(1, "8cm") %>% 
+  kableExtra::column_spec(2:3, "5cm") %>% 
+  kableExtra::landscape()
+```
+
+
+# Characteristics {-}
+
+## Asparagus (_Asparagus officinalis_ L.){-}
+
+The edible asparagus shoots are called "spears" and are harvested while they are still immature. The shoot has distinctive triangular shaped scales. The tip of the shoot has tightly clustered, overlapping scales (Figure \@ref(fig:asparagus-spear)). The tops are sometimes tinged with purple. Most asparagus cultivars are green and some are purple. Sometimes you will see white spears.  These are genetically identical to the green spears but are simply blanched or grown in the dark. After harvesting is complete, the spears grow into a mature plant with fern-like foliage.
+
+```{r asparagus-spear, fig.cap="Spear of asparagus (modification of stem)"}
+knitr::include_graphics(c("./images/vegetables/Asparagus_shoot.jpg", "./images/vegetables/Asparagus.JPG"))
+```
+
+```{r asparagus-berry-plant, fig.cap="Berry fruit of asparagus (left) and asparagus plant showing foliage (right)"}
+knitr::include_graphics(c("./images/vegetables/Asparagus_berry.jpg", "./images/vegetables/Asparagus_leaf.JPG"))
+```
+
+## Garlic (_Allium sativum_ L.) {-}
+
+The bulb, the part of the garlic plant that is consumed, protected by several layers of white, papery coverings. The bulb is composed of a group of wedge-shaped cloves. Each individual clove is also protected by a white, papery covering (Figure \@ref(fig:garlic-bulb)).
+
+```{r garlic-bulb, fig.cap="A bulb of garlic, with papery coverings"}
+knitr::include_graphics("./images/vegetables/Garlic_bulb.jpg")
+```
+
+
+## Cabbage (_Brassica oleracea_ var. _capitata_) {-}
+
+Cabbage plants grow in a rosette near the ground or on a short stalk. As the plant grows, the leaves increase in number, forming a ball-shaped "head" in the center of the plant. The head of the cabbage plant is made up of several layers of overlapping leaves. Head cabbage and head lettuce are similar in appearance, but cabbage leaves are usually more tightly wrapped on the head (Figure \@ref(fig:cabbage-head)).
+
+Cabbage plants can vary in size, shape, color, and texture. For example, some cabbages are purple in color and certain cultivars have pointed heads.
+
+```{r cabbage-head, fig.cap="An immature cabbage head"}
+knitr::include_graphics("./images/vegetables/Cabbage_head.JPG")
+```
+
+
+The leaves of cabbages can range from smooth to crinkled, green to red. They are usually very broad and cupped, with a network of veins that connect to a central mid-vein. The central mid-vein is largest at the bottom center of each leaf.
+
+## French Bean (_Phaseolus vulgaris_ L.) {-}
+
+Beans grow in an elongated, straight or slightly curved pod. Some pods are cylindrical and some are flattened. Bean pods are usually green, but there are also yellow, purple, and mottled cultivars. Beans have compound leaves divided into three oval or heart-shaped leaflets that are dark green and rough in texture. The leaves are arranged alternately on the stem.
+
+## Carrot (_Daucus carota_ var. _sativus_ (Hoffm.)) {-}
+
+The part of the carrot plant that is eaten is the root. It is usually orange, elongated and pointed at the tip, although some cultivars can be short, round, red, purple, or yellow in color and have a blunt tip. The carrot plant forms a cluster of feathery leaves that originate from the base of the plant. The plant stands 1 or 2 feet tall. Carrot leaves are compound with each leaf consisting of several finely divided leaflets (Figure \@ref(fig:carrot-plant)).
+
+```{r carrot-plant, fig.cap="A carrot plant showing compound leaves"}
+knitr::include_graphics("./images/vegetables/Carrot_plant.JPG")
+```
+
+
+## Cucumber (_Cucumis sativus_ L.) {-}
+
+The dark green fruit of the cucumber is elongated and cylindrical with rounded ends and slightly bumpy skin. There are both straight and curved cultivars. Some grow over a foot long and some are very short such as pickling cucumbers. Cucumber fruits develop in the leaf axils (where the leaves join the stem). There are vine and bush cucumber cultivars.  Vine cultivars commonly spread across the ground but they can also be trained to grow up a trellis.
+
+Cucumber leaves are triangular in shape with pointed lobes. The leaves are large, dark green, and have a slightly rough texture.
+
+Cucumber plants have small yellow flowers that are either male or female. When successfully pollinated, the female flower produces the cucumber fruit. It is easily identified by a miniature fruit at the base of the flower. The male flower sheds its pollen and then falls off the plant.
+
+## Watermelon (_Citrullus lunatus_ (Thunb.)) {-}
+
+Watermelon fruit is very large, smooth, and oval to round. The skin can be solid green or green striped with yellow. The edible flesh is usually pink with many flat, oval, black seeds throughout. Seedless varieties also exist, as well as types with orange, yellow, or white flesh.
+
+## Tomato (_Lycopersicon escutentum_ Mill.) {-}
+
+Tomatoes are grown for their edible fruit. The fruit is usually red to red-orange, but it can also be pink, yellow, green, white, or striped. They vary in size from about one inch to the size of a softball. Most tomato fruits are round with an indentation at the top where the stem attached.
+
+Tomato fruit shape varies from round, to oblong, pointed, and pear shaped. They all have smooth, shiny skin and are easily bruised.
+
+## Potato (_Solanum tuberosum_ L.) {-}
+
+The part of the potato plant we eat is called the tuber, which is actually an enlarged underground stem. Each plant will produce multiple tubers. Potato tubers come in a variety of colors, but most common are red and white. Their shape can be round, oblong, flattened, or elongated.
+
+An identifying feature of potato tubers is their "eyes," which are small nodes with buds. If placed in a warm location the buds will sprout.  If tubers are exposed to light, the buds will turn green as well as the tuber itself.
+
+## Squash (_Cucurbita pepo_ L.) {-}
+
+There are many different varieties of squash. They all share the common plant characteristics of broad, dark green leaves and bright yellow to orange trumpet-shaped flowers that are separate male and female flowers.
+
+Summer squash tends to be more of a compact vine or bush type, while winter squash is more often a sprawling vine.
+
+Squash leaves vary in size and shape, but typically have 3 to 5 lobes and are rather large in size.
+
+Squash flowers are large, yellow flowers with fused corolla (petals).  Squash have separate male and female flowers (Shown in Figure \@ref(fig:squash-flowers)).  The stigma can be seen on the female flower. The male flower supplies the pollen grains. Like the other vine crops, the female blossoms can be easily identified by the small fruit (ovary) attached below the petals.
+
+```{r squash-flowers, fig.cap="Squash flowers; male flower (left), female flower (right)"}
+knitr::include_graphics(c("./images/vegetables/Squash_male.jpg", "./images/vegetables/Squash_female.jpg"))
+```
+
+
+## Pumpkin (_Cucurbita moschata_ (Duch. Poir)) {-}
+
+Pumpkin fruits are usually shaped like a flattened globe, though they also come in other shapes such as oblong or pear. They are yellow-orange to orange in color, and sometimes white. The skin is somewhat smooth and sometimes has vertical lines down the side of the fruit. Pumpkin fruits can vary greatly in size from less than five pounds to more than one hundred pounds.
+
+The pumpkin plant is a rambling vine that is grown for its familiar orange fruit. They have large, dark green leaves, orange trumpet-shaped flowers, and prickly hairs on the stems and leaves. Like cucumbers, corn, and muskmelons, the pumpkin has separate male and female flowers on the same plant. 
+
+Pumpkin plants have large, dark green, lobed leaves. Pumpkin vines have large, yellow flowers that are 4 to 5 inches in diameter. The vine has separate male and female flowers. The fruit is beginning to form at the base of this female flower.
+
+## Radish (_Raphanus sativus_ L.) {-}
+
+Radish plants are grown for their crisp, peppery-tasting roots. Radishes can look similar to beets, but radishes are usually smaller, smoother, and brighter in color. Radishes are typically red and round, but other colorful cultivars include white, pink, or purple. The shape may also vary from round to oblong.

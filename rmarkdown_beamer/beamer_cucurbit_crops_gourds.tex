@@ -1,0 +1,528 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+  aspectratio=169]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usetheme[]{Frankfurt}
+\usecolortheme{beaver}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Cucurbit crops: gourds},
+  pdfauthor={Deependra Dhakal},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{tikz} % required for image opacity change
+\usepackage[absolute,overlay]{textpos} % for text formatting
+
+% this font option is amenable for beamer
+\setbeamerfont{caption}{size=\tiny}
+
+% % redefine section page format
+% \defbeamertemplate{section page}{mine}[1][]{%
+%   \begin{centering}
+%     {\usebeamerfont{section name}\usebeamercolor[fg]{section name}#1}
+%     \vskip1em\par
+%     \begin{beamercolorbox}[sep=12pt,center]{part title}
+%       \usebeamerfont{section title}\insertsection\par
+%     \end{beamercolorbox}
+%   \end{centering}
+% }
+
+\title{Cucurbit crops: gourds}
+\author{Deependra Dhakal}
+\date{2019}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}[allowframebreaks]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\begin{frame}{Background}
+\protect\hypertarget{background}{}
+\begin{itemize}
+\tightlist
+\item
+  Consist several genera indigenous to Africa, India, Asia, and the
+  Americas.
+\item
+  Generally eaten when immature, some edible as they ripe.
+\item
+  Cylindrical, discoid, or bottle-shaped.
+\item
+  Seeds found in the central cavity.
+\item
+  Mostly grown in Asia and parts of Africa.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section}{}
+\begin{table}
+
+\caption{\label{tab:gourds-intro}Nomenclature of gourds}
+\centering
+\begin{tabular}[t]{ll}
+\toprule
+Crop & Scientific Name\\
+\midrule
+Bottle gourd & \textit{Lagenaria siceraria} (Mol.)\\
+Bitter gourd & \textit{Momordica charantia} (L.)\\
+Pointed gourd & \textit{Trichosanthes dioica} (Roxb.)\\
+Snake gourd & \textit{Trichosanthes cucumerina}\\
+Sponge gourd & \textit{Luffa cylindrica}\\
+\addlinespace
+ & \textit{Luffa aegyptiaca} (Mill)\\
+Ash gourd & \textit{Benincasa hispida} (Thunb.)\\
+Chayote & \textit{Sechium edule} (Swartz)\\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}{Uses}
+\protect\hypertarget{uses}{}
+\begin{itemize}
+\tightlist
+\item
+  Sponge gourd upon maturing is fibrous and can be used as rough sponge
+  or scrub pad.
+\item
+  Airtight container (Calabash gourd)
+\item
+  Can be stored after slice drying for later use as vegetable.
+\item
+  Some are even eaten raw.
+\end{itemize}
+\end{frame}
+
+\hypertarget{bottle-gourd}{%
+\section{Bottle gourd}\label{bottle-gourd}}
+
+\begin{frame}{Introduction}
+\protect\hypertarget{introduction-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Common in Nepal and India, but grown in Ethiopia, Africa, Central
+  America and warmer regions.
+\item
+  Fruits' shape resemble to that of a bottle.
+\item
+  Mostly yellowish-green or cream colored, relatively soft in texture,
+  with white pulp and large white seeds.
+\item
+  Used for making sweets and pickles.
+\item
+  Beneficial for jaundice patients, in those with digestive problems,
+  cough, nightblindness, etc.
+\item
+  Monoecious annual vine with large oxalate oval leaves and branched
+  tendrils spreading or climbing 3-15m.
+\item
+  Foliage pubescent and emits musky odor when bruised.
+\item
+  Flowers large white, borne on slender peduncles, open in the evening
+  and may remain open until the middle of the following day.
+\item
+  Fruits vary in shape and sizes(10-90cm in length)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Climate}
+\protect\hypertarget{cultivation-climate}{}
+\begin{itemize}
+\tightlist
+\item
+  Tropical crop(hot and humid climate)
+\item
+  Optimum temperature: \(24-27^\circ C\)
+\item
+  Highly sensitive to photoperiod
+\item
+  Short day and humid climate promote femaleness
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Soil}
+\protect\hypertarget{cultivation-soil}{}
+\begin{itemize}
+\tightlist
+\item
+  Best on sandy loam with high OM content
+\item
+  Well drained
+\item
+  pH: 6-7
+\item
+  River bed farming is also successful
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Propagation}
+\protect\hypertarget{cultivation-propagation}{}
+\begin{itemize}
+\tightlist
+\item
+  Seeds(450-500/100g)
+\item
+  Seed retains viability for long periods(upto 34 years)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Cultural Practices}
+\protect\hypertarget{cultivation-cultural-practices}{}
+\begin{itemize}
+\tightlist
+\item
+  Shallow rooted crop
+\item
+  Fine bed preparation
+\item
+  Direct sowing on raised beds, in furrows, or trenches or pits
+\item
+  Two seeds per hill on either sides of raised beds or furrows
+\item
+  Spacing: 2.5*2m or 2-3*1.5m
+\item
+  Pit: 90*90*60cm deep, filled with FYM and topsoil
+\item
+  3-4 seeds per pit
+\item
+  45 t/ha FYM
+\item
+  40-60:40-60:60-80 kg/ha NPK
+\item
+  Nitrogen in split doses(Basal and at vining stage)
+\item
+  Pruning to exert favorable effects on fruit yield
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Interculture}
+\protect\hypertarget{cultivation-interculture}{}
+\begin{itemize}
+\tightlist
+\item
+  Shallow interculture operations needed
+\item
+  Hand weeding(2-3 times)
+\item
+  Pre-emergence herbicide: linuron @ 0.5kg/ha or alachlor 2.5 kg/ha
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Irrigation}
+\protect\hypertarget{cultivation-irrigation}{}
+\begin{itemize}
+\tightlist
+\item
+  Immediately after seed sowing to promote germination
+\item
+  High humidity promotes prolific bearing
+\item
+  Irrigation every 3-4 days in warm weather
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Maturity and Harvesting}
+\protect\hypertarget{cultivation-maturity-and-harvesting}{}
+\begin{itemize}
+\tightlist
+\item
+  Fruit setting increased by maleic hydrazide spray(400 ppm), boron(3
+  ppm) and calcium (20 ppm)
+\item
+  Ready for harvest approx. 60 DAS
+\item
+  12-15 days after fruit set to reach marketable size
+\item
+  Picking every 4-5 days
+\end{itemize}
+\end{frame}
+
+\hypertarget{bitter-gourd}{%
+\section{Bitter gourd}\label{bitter-gourd}}
+
+\begin{frame}{Cultivation: Climate and Soil}
+\protect\hypertarget{cultivation-climate-and-soil}{}
+\begin{itemize}
+\tightlist
+\item
+  Grown in tropical or subtropical climates, but warm and hot climate
+  best for growth
+\item
+  Most resistant to low temperatures than other cucurbits
+\item
+  Optimum temp: \(24^\circ C-27^\circ C\)
+\item
+  Short day promotes female flower production
+\item
+  Grow on sandy to loamy soils
+\item
+  Optimum pH: 6-6.7
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Propagation}
+\protect\hypertarget{cultivation-propagation-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Seed propagated commercially
+\item
+  Have hard seed coat, impermeable to water
+\item
+  Heavy seeds, and retain viability for upto 45 years
+\item
+  Cultural Practices
+\item
+  Seeds sown in raised beds or pits
+\item
+  Raised beds: 1.2-1.5m wide beds, 60 cm wide furrows between beds
+\item
+  Spacing: 1.5-2m between rows, 60-120cm between plants
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Pit planting: 60*60*45 cm deep, plants spaced at 1.8-2.4cm apart with
+  two seeds per hill
+\item
+  Seed rate: 4.5-6kg/ha
+\item
+  Training or staking required, mostly when grown as rainy season crop
+\item
+  Bowers erected 6 ft. from ground level using wooden poles. Strong
+  poles 10 ft. in length and 4 cm in diameter fixed 45 cm deep in soil,
+  5 m apart. All poles connected by wire. 16-gauge wires stretched over
+  the 10-gauge wires 60 cm apart, crosswise.
+\item
+  Kniffens may also be prepared by wooden poles and wire
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Fertilization and manuring}
+\protect\hypertarget{cultivation-fertilization-and-manuring}{}
+\begin{itemize}
+\tightlist
+\item
+  60-80 kg N, 70-90 kg P, 60-70 kg K per hectare
+\item
+  Nitrogen best applied in split doses(latter half @initial fruit-set
+  stage)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Irrigation}
+\protect\hypertarget{cultivation-irrigation-1}{}
+\begin{itemize}
+\tightlist
+\item
+  First, Immediately after sowing
+\item
+  At regular intervals of 5-7 days
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Weed management}
+\protect\hypertarget{cultivation-weed-management}{}
+\begin{itemize}
+\tightlist
+\item
+  Interculture to ensure proper spread of crop
+\item
+  Weedicides: alachlor and butachlor @2.5 kg ai/ha
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation: Maturity and harvest}
+\protect\hypertarget{cultivation-maturity-and-harvest}{}
+\begin{itemize}
+\tightlist
+\item
+  Crop takes about 55-110 days from seed sowing to first harves
+\item
+  Fruits picked while still tender
+\item
+  Picking done every 2-3 days
+\item
+  Yellowing of fruit indicated ripening, which is unfit for consumption
+\item
+  Fruits storable for 35 days under cool and shady conditions
+\end{itemize}
+\end{frame}
+
+\hypertarget{pointed-gourds}{%
+\section{Pointed gourds}\label{pointed-gourds}}
+
+\begin{frame}{Cultivation: Propagation}
+\protect\hypertarget{cultivation-propagation-2}{}
+\begin{itemize}
+\tightlist
+\item
+  Crop is dioecious
+\item
+  Vegetatively propagated with vine cuttings and root suckers
+\item
+  Seed propagation has poor germination
+\item
+  50\% plants may be non-fruiting(male) types
+\item
+  10-12\% male plants is adequate
+\item
+  Generally, early maturing varieties with fewer nodes bear pistillate
+  flowers
+\item
+  Cuttings transplanted in August in upland and November in riverbeds
+\item
+  Spacing: 2 * 2 m
+\item
+  Root cuttings transpalnted in second half of October
+\item
+  Vine cuttings of length 1-1.5m cut and folded in a figure of ``8'' or
+  ring, and planted in pits with mixture of FYM and soil and buried 10
+  cm deep.
+\end{itemize}
+\end{frame}
+
+\hypertarget{snake-gourds}{%
+\section{Snake gourds}\label{snake-gourds}}
+
+\hypertarget{sponge-gourds}{%
+\section{Sponge gourds}\label{sponge-gourds}}
+
+\hypertarget{ash-gourds}{%
+\section{Ash gourds}\label{ash-gourds}}
+
+\hypertarget{cultivation-outline}{%
+\section{Cultivation outline}\label{cultivation-outline}}
+
+\begin{frame}{Cultivation outline}
+\begin{table}
+
+\caption{\label{tab:cultivation-outline}Cultivation outline of gourds}
+\centering
+\fontsize{6}{8}\selectfont
+\begin{tabular}[t]{>{\raggedright\arraybackslash}p{5em}>{\raggedright\arraybackslash}p{6em}>{\raggedright\arraybackslash}p{8em}>{\raggedright\arraybackslash}p{8em}>{\raggedright\arraybackslash}p{8em}>{\raggedright\arraybackslash}p{5em}>{\raggedright\arraybackslash}p{5em}>{\raggedright\arraybackslash}p{5em}>{\raggedright\arraybackslash}p{5em}}
+\toprule
+Crop & Varieties & Sowing time(High hills) & Sowing time(Mid hills) & Sowing time(Terai hills) & FYM & NPK/ropani & Spacing & Seed required/ropani\\
+\midrule
+\rowcolor{gray!6}  Bottle gourd & N.S-421 &  & Falgun-Ashar & Poush-Jestha & 1500 & 2:2:1 & 200 x 200 & 50-100 g\\
+ & Summer prolific long & Baisakh-Jestha & Falgun-Chaitra & Magh-Jestha &  &  & 200 x 200 & 50-100 g\\
+\rowcolor{gray!6}  Sponge gourd & Kantipure, Jyapu & Baisakh-Jestha & Falgun-Jestha & Magh-Jestha & 500 & 2:1:1 & 300 x 300 & 50-100 g\\
+ & Pusa Chillo & Baisakh-Jestha & Falgun-Jestha & Magh-Jestha &  &  &  & \\
+\rowcolor{gray!6}  Bitter gourd & Green & Baisakh-Jestha & Falgun-Chaitra & Magh-Jestha & 1500 & 10:6:3 & 150 x 100 & 100 g\\
+\addlinespace
+ & Coimbatore long & Baisakh-Jestha & Falgun-Chaitra & Magh-Jestha &  &  & 150 x 100 & 100 g\\
+\rowcolor{gray!6}   & Creeper & Baisakh-Jestha & Falgun-Jestha & Poush-Jestha &  &  & 150 x 100 & 100 g\\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+\hypertarget{bibliography}{%
+\section{Bibliography}\label{bibliography}}
+
+\begin{frame}{References}
+\protect\hypertarget{references}{}
+\end{frame}
+
+\end{document}

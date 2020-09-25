@@ -1,0 +1,13 @@
+# source: Selected indicators from ANZDEC (2002),,,
+Terms,Estimate($Kg\ hectare^{-1})$,t-statistic,Average
+Intercept,"2,654.20",102,
+NPK,11.23,5.3,33
+$(NPK)^2$,-0.038,-2.7,"2,705"
+Irrigation,652.2,8,0.67
+Variety,-507.6,-6.2,0.65
+Mountain,"-1,086.00",-10,
+Hill,-181.2,-2,
+Adjusted $R^2$,0.33,,
+Average response to nutrients,85,,
+Elasticity of yield response to nutrients,0.11,,
+Observations,719,,

@@ -1,0 +1,328 @@
+---
+title: "Identification and characterization of major weeds of selected field crops"
+author: "Deependra Dhakal"
+date: "`r Sys.Date()`"
+output:
+  bookdown::pdf_document2:
+    toc: yes
+    toc_depth: 3
+    includes:
+      in_header: header.tex
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(tidy = FALSE, cache = TRUE, echo = FALSE, 
+                      message = FALSE, warning = FALSE)
+options(htmltools.dir.version = FALSE, kableExtra.latex.load_packages = FALSE, 
+        knitr.kable.NA = "", digits = 2)
+```
+
+# Background
+
+Globally, weeds cause upto 40% reduction in yields of all major cultivated crops. Even crop plants can be serious weeds in other crops, e.g. volunteer potatoes or weed beet.
+
+There have been numerous definitions of weeds. Older ones include: 
+
+> _"a plant not valued for its use or beauty"_
+
+and 
+
+> _"a plant whose virtues have yet to be discovered"_
+
+However, most modern definitions convey an opinion that these are the plants which are considered undesirable in some way.
+
+This leads to the understanding that crops may at some time also be weeds. For example, the grass plants growing in the domestic garden lawn are acceptable and encouraged, but when they spread to the adjacent flowerbed they are considered weeds. Similarly, crop seeds which are shed in the field can grow in subsequent crops in following years and contaminate them. The definition of weeds adopted by the European Weed Science Society is: 
+
+> _"any plant or vegetation, excluding fungi, interfering with the objectives or requirements of people"_
+
+Similarly the Weed Science Society of America has adopted the definition: 
+
+> _"a plant growing where it is not desired"_
+
+Weeds can significantly affect crop yields by shading and smothering the crop as well as by competing for plant nutrients and water. The competitiveness of weeds varies both between species and at different times of the year, thus the extent of weed associated loss in yield too. Some crops are also more affected by weed competition than others. Potatoes produce a dense crop canopy which can be very effective at competing with weeds compared with sugar beet which is precision drilled at a low population, and has many weeks when there is little crop cover. As well as affecting crop yield, weeds also affect crops in other ways, e.g. They can spoil the quality of a crop and so lower its value, e.g. wild oats in seed wheat; black nightshade berries in vining peas.
+
+# Characteristics of weeds/How do plants become weeds?
+
+```{r weedification}
+readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "reasons", skip = 1) %>% 
+  mutate_at("Examples", list(~str_replace_all(., "\\*([:alpha:]+\\s?[:alpha:]*)\\*", "\\\\textit{\\1}"))) %>% 
+  knitr::kable(caption = "Qualifications of a plant as a weed", format = "latex", 
+               longtable = TRUE, booktabs = TRUE, 
+               escape = FALSE) %>% 
+  kableExtra::kable_styling(position = "center", latex_options = c("HOLD_position", "repeat_header", "striped")) %>% 
+  kableExtra::row_spec(0, bold = TRUE) %>% 
+  kableExtra::column_spec(1:3, width = c("10em", "22em", "22em")) %>% 
+  kableExtra::landscape()
+```
+
+# Identification of weeds
+
+## Seasonality and dormancy of weeds
+
+When planning a weed control programme it is important to have knowledge of the weed life cycles.  Some of the most important weed species such as billygoat-weed (_Ageratum conyzoides_; "Gandhe jhar"), foxtail grass (_Alopecurus nepalensis_), wild oats and blackgrass are annuals. Only a small number of biennials are important weeds and are more of a problem in permanent crops such as spear thistle and ragwort in grassland. There are a number of important perennial weeds. Seed production is not necessarily the main method of propagation for perennials. Underground stems (rhizomes) or roots (stolons) are very important for the spread of weeds such as creeping thistle and Bermuda grass (_Cynodon dactylon_; "dubo").
+
+```{r dormancy, fig.width=6, out.width="85%", fig.cap="Dormancy and growth of annual weeds"}
+# pdftools::pdf_convert("~/../Downloads/Robert E. L. Naylor-Weed Management Handbook-Wiley-Blackwell (2002).pdf", format = "jpeg", pages = 63, dpi = 250)
+
+knitr::include_graphics("../images/weed_identification/seasonality_and_dormancy_weeds.jpeg")
+```
+
+## Weed types and identification
+
+For optimum control of weeds, both culturally and chemically, it is very important to be able to identify the weeds correctly. There are two main groups of weeds, the monocotyledons or grass weeds and the dicotyledons or broadleaved weeds.
+
+### Grass weeds
+There are several features which can aid identification. Generally, annuals are spread by seed, whereas perennials are spread either by seed or by vegetative parts. Some of the stem/root characteristics help with identification such as presence of stolons or rhizomes Figure \ref{fig:grass-weeds}.
+
+- Leaves. Some grasses have folded leaves in the leaf sheath which help in recognition. Leaf shape and size are important, as is the presence of auricles. Size and shape of the ligule usually aid identification of species in the same family.
+- Presence or absence of leaf/stem hairs. A few grasses have very hairy leaves, such as barren brome and Yorkshire fog. Wild oats only have hairs on the leaf margin.
+- Stem base coloration. A few important grasses have coloured stem bases; ryegrass is a deep red, blackgrass has a purplish blotch and awned canary grass is pink.
+- Ear characteristics are distinctive for most of the grasses as detailed below. Normally control is carried out before ear production. Ear number is important when assessing effectiveness of control that year; weed mapping for patch spraying and checking for development of resistant plants is necessary.
+
+```{r grass-weeds, fig.width=5, out.width="75%", fig.cap="Morphology of grass weeds"}
+
+knitr::include_graphics("../images/weed_identification/weeds/Grasses_1.jpeg")
+knitr::include_graphics("../images/weed_identification/weeds/Grasses_2.jpeg")
+knitr::include_graphics("../images/weed_identification/weeds/Grasses_3.jpeg")
+```
+
+## Broad-leaved weeds
+
+Control, both chemical and mechanical, of annual broad-leaved weeds is usually most effective at the seedling stage. In order that the correct product is chosen it is important to identify the weed correctly. Many broad-leaved weeds have very characteristic cotyledons (seed leaves) or true leaves which aid identification. Size, shape, colour, if stalked, presence of hairs or prominent leaf wax all help recognition. Figure \ref{fig:broad-leaved-weeds} shows the characteristics of some common broad-leaved weeds.
+
+```{r broad-leaved-weeds, fig.width=5, out.width="75%", fig.cap="Morphology of broad-leaved wees"}
+
+knitr::include_graphics("../images/weed_identification/weeds/Broad_leaves_1.jpeg")
+knitr::include_graphics("../images/weed_identification/weeds/Broad_leaves_2.jpeg")
+```
+
+### Billygoat-weed/Chickweed ( _Ageratum conyzoides_; "Gandhe jhar")
+
+It is the most common broad-leaved weed in arable crops. It favours fertile soils, germinating all the year round with a peak in the autumn and the spring. It readily overwinters. This weed is very successful partly because it can produce more than one generation of plants a year and thus a lot of seed. At the seedling stage it is a bright green colour and has true leaves with the same shape as the cotyledons. The flowers range from pink, white to blue in colour and produce seeds which are easily dispersed by the wind. 
+
+## Major weeds of Rice
+
+```{r rice-weeds}
+readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_rice", skip = 1, col_names = FALSE, .name_repair = "universal") %>% 
+  mutate_at(1, list(~str_c("\\textit{", ., "}"))) %>% 
+  knitr::kable(caption = "Major weeds of Rice crop", 
+             col.names = c("Scientific name", "Local name"), 
+             format = "latex", longtable = TRUE, booktabs = TRUE, escape = FALSE)  %>%
+  kableExtra::row_spec(0, bold = TRUE) %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position", "repeat_header"), full_width = FALSE)
+```
+
+### Images of rice weeds
+
+```{r rice-weeds1, fig.width=5, out.width="55%", fig.ncol = 2, eval=TRUE}
+knitr::include_graphics("../images/weed_identification/Alternanthera_pungens.jpg")
+knitr::include_graphics("../images/weed_identification/Alternanthera_pungens2.jpg")
+knitr::include_graphics("../images/weed_identification/pigeon_pea/Commelina_benghalensis.jpg")
+knitr::include_graphics("../images/weed_identification/Eclipta_alba.jpg")
+knitr::include_graphics("../images/weed_identification/Eclipta_prostrata.jpg")
+knitr::include_graphics("../images/weed_identification/Eichhornia_crassipes.jpg")
+knitr::include_graphics("../images/weed_identification/Eichhornia_crassipes2.JPG")
+knitr::include_graphics("../images/weed_identification/Ipomoea_aquatica.jpg")
+knitr::include_graphics("../images/weed_identification/Lippia_nodiflora.JPG")
+knitr::include_graphics("../images/weed_identification/Lippia_nodiflora2.jpg")
+knitr::include_graphics("../images/weed_identification/Echinochloa_colona.jpg")
+knitr::include_graphics("../images/weed_identification/Eleusine_indica.jpg")
+knitr::include_graphics("../images/weed_identification/Paspalum_distichum.jpg")
+knitr::include_graphics("../images/weed_identification/Panicum_repens.jpg")
+knitr::include_graphics("../images/weed_identification/Panicum_repens2.jpg")
+knitr::include_graphics("../images/weed_identification/Monochoria_vaginalis.JPG")
+knitr::include_graphics("../images/weed_identification/Lemna_minor.JPG")
+knitr::include_graphics("../images/weed_identification/Rotala_rotundifolia.jpg")
+knitr::include_graphics("../images/weed_identification/Polygonum_hydropiper.JPG")
+```
+
+
+## Major weeds of Maize
+
+```{r maize-weeds}
+readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_maize", skip = 1, col_names = FALSE) %>% 
+  mutate_at(1, list(~str_c("\\textit{", ., "}"))) %>% 
+  knitr::kable(caption = "Major weeds of Maize crop", 
+             col.names = c("Scientific name", "Local name"), 
+             format = "latex", longtable = TRUE, booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::row_spec(0, bold = TRUE) %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position", "repeat_header"), full_width = FALSE)
+```
+
+### Images of Maize weeds
+
+```{r maize-weeds2, fig.width=5, out.width="55%", eval=TRUE, fig.ncol = 2}
+knitr::include_graphics("../images/weed_identification/soybean/amaranthus_spinosus.jpg")
+knitr::include_graphics("../images/weed_identification/pigeon_pea/amaranthus_viridis.jpg")
+knitr::include_graphics("../images/weed_identification/Celosia_argentea.jpg")
+knitr::include_graphics("../images/weed_identification/Digitaria_sanguinalis.jpg")
+knitr::include_graphics("../images/weed_identification/Paspalum_distichum.jpg")
+knitr::include_graphics("../images/weed_identification/Eleusine_indica.jpg")
+knitr::include_graphics("../images/weed_identification/pigeon_pea/cyperus_rotundus.jpg")
+knitr::include_graphics("../images/weed_identification/Brachiaria_reptans.jpg")
+```
+
+
+## Major weeds of Wheat
+
+```{r wheat-weeds}
+readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_wheat", skip = 1, col_names = FALSE) %>% 
+  mutate_at(1, list(~str_c("\\textit{", ., "}"))) %>% 
+  knitr::kable(caption = "Major weeds of Wheat crop", 
+               col.names = c("Scientific name", "Local name"), 
+               format = "latex", booktabs = TRUE, longtable=TRUE, escape = FALSE) %>%
+  kableExtra::row_spec(0, bold = TRUE) %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position", "repeat_header"), full_width = FALSE)
+```
+
+### Images of Wheat weeds
+
+```{r wheat-weeds2, fig.width=5, out.width="55%", eval=TRUE, fig.ncol = 2}
+knitr::include_graphics("../images/weed_identification/Phalaris_minor.jpg")
+knitr::include_graphics("../images/weed_identification/Phalaris_minor_plant.JPG")
+knitr::include_graphics("../images//weed_identification/Chenopodium_album_plant.jpg")
+knitr::include_graphics("../images//weed_identification/Chenopodium_album_flowers.jpg")
+knitr::include_graphics("../images//weed_identification/Melilotus_alba_plant.jpeg")
+knitr::include_graphics("../images//weed_identification/Anagallis_arvensis.jpg")
+knitr::include_graphics("../images//weed_identification/Lathyrus_aphaca_plant.jpg")
+knitr::include_graphics("../images//weed_identification/Spergula_arvensis.jpg")
+knitr::include_graphics("../images//weed_identification/Vicia_sativa.jpg")
+```
+
+## Major weeds of Millet
+
+```{r millet-weeds}
+readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_millet", skip = 1, col_names = FALSE) %>% 
+  mutate_at(1, list(~str_c("\\textit{", ., "}"))) %>% 
+  knitr::kable(caption = "Major weeds of Millet crop", 
+               col.names = c("Scientific name", "Local name"), 
+               format = "latex", booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::row_spec(0, bold = TRUE) %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE)
+```
+
+
+## Major weeds of pigeon pea
+
+Major weed species of pigeon pea crop are:
+
+```{r pigeonpea-weeds}
+# pigeon_weeds <- gsub(pattern = "_", replacement = " ", stringr::str_to_title(list.files("./images/pigeon_pea/"))) %>% 
+#   stringr::str_split(pattern = "\\.") %>% 
+#   map_chr(.f = c(1)) %>% cbind %>% as_tibble() %>% set_names(nm = "Weeds")
+
+readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_pigeonpea", 
+                  skip = 1, col_names = TRUE) %>% 
+  mutate_at(1, list(~str_c("\\textit{", ., "}"))) %>% 
+  knitr::kable(caption = "Major weeds of Pigeon pea crop", 
+               format = "latex", 
+               booktabs = TRUE, escape = FALSE) %>% 
+  kableExtra::row_spec(0, bold = TRUE) %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"))
+```
+
+### Images of Pigeon pea weeds
+
+```{r pigeonpea-weeds2, fig.width=5, out.width="55%", eval=TRUE, fig.ncol = 2}
+knitr::include_graphics(list.files("../images/weed_identification/pigeon_pea", full.names = TRUE))
+```
+
+
+## Major weeds of lentil
+
+Major weeds of lentil are:
+
+```{r lentil-weeds}
+readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_lentil", skip = 1, col_names = TRUE) %>%   
+  mutate_at(1, list(~str_c("\\textit{", ., "}"))) %>% 
+  knitr::kable(caption = "Major weeds of Lentil crop", 
+               col.names = c("Scientific name", "Local name"), 
+               format = "latex", booktabs = TRUE, escape = FALSE) %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>% 
+  kableExtra::row_spec(0, bold = TRUE)
+```
+
+
+## Major weeds of soybean
+
+Major weeds of soybean are:
+
+```{r soybean-weeds}
+readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_soybean", 
+                  skip = 1, col_names = TRUE) %>% 
+  mutate_at(1, list(~str_c("\\textit{", ., "}"))) %>% 
+  knitr::kable(caption = "Major weeds of Soybean crop", 
+               format = "latex", 
+               booktabs = TRUE, escape = FALSE) %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>% 
+  kableExtra::row_spec(0, bold = TRUE)
+```
+
+### Images of Soybean weeds
+
+```{r soybean-weeds2, fig.width=5, out.width="55%", eval=TRUE, fig.ncol = 2}
+knitr::include_graphics(list.files("../images/weed_identification/soybean/", full.names = TRUE))
+```
+
+
+# Methods of weed control
+
+\textbf{Crop hygiene} \newline It is particularly important to ensure that only clean seed is sown when using home saved seed. Hand roguing can be a very effective method of preventing weeds becoming a problem in the first place. Avoidance of machinery contamination can also help to prevent weed increase, e.g. wild oats.
+
+\textbf{Cultivations} \newline Ploughing can be very effective at containing or reducing some annual grass weed problems such as blackgrass and barren brome. Weeds such as wild oats that can germinate from plough depth are unaffected by ploughing; sometimes populations are worse after ploughing compared with the use of minimum cultivations. In some years, if there is enough soil moisture, stubble cultivations and the 'stale' seedbed technique can be a useful aid to weed control. The soil is cultivated ready to sow the next crop, weeds are allowed to grow and are then killed before planting the crop. Inter-row cultivations are still used in some crops, particularly if there is a difficult weed to control such as weed beet in sugar beet. There is some interest in the use of in-crop weeders as a method of reducing herbicide inputs.
+
+\textbf{Cutting} \newline This weakens the plants and prevents seeding. The results are often disappointing if not repeated. However, control of spear thistle can be very effective from cutting as long as the timing is correct, although creeping thistle is more difficult to control. This method is commonly applied in bracken, rushes, ragwort and thistles.
+
+\textbf{Drainage} \newline This is a very important method of controlling those weeds which thrive in waterlogged soils. Lowering the water table by good drainage will help to control weeds such as rushes, sedges and creeping buttercup.
+
+\textbf{Rotations} \newline Growing leys and various arable crops that are planted at different times of the year usually leads to a different weed flora. There is also an opportunity to use different types or groups of herbicides. This method is still useful if there are difficult weeds such as barren brome, volunteer potatoes and weed beet to control.
+
+\textbf{Maintenance of good fertility} \newline Arable crops and good grass require a high level of fertility, i.e. the soil must be adequately supplied with lime, nitrogen, phosphates, potash and organic matter. Under these conditions crops can compete strongly with most weeds.
+
+\textbf{Crop seed rates} \newline High seed rates and good crop establishment all help to reduce the impact of weeds.
+
+\textbf{Burning} \newline The use of propane burners can be an effective method of weed control; it is mainly used in organic systems.
+
+\textbf{Mulches} \newline There are a number of mulching materials that can be used to prevent weed growth in some small-scale plantings, e.g. amenity plantings, fruit and vegetable crops. Black polythene is the most commonly used material. As well as preventing weed growth it also helps to conserve moisture. 
+
+\textbf{Chemical control} \newline There are now over a hundred different herbicides and a thousand products on the market. The following is a summary of the main chemicals and methods that are used.
+
+## Weed control of some selected crops
+
+### Pigeon pea
+
+For short season pigeonpea, the first 30 days appear critical, although this period may vary with the genotype and time of sowing. One hand weeding at 45 DAS is not as effective as two weedings at 25 and 45 days after sowing. A number of herbicides have been found useful for pigeonpea systems. The following PRE herbicides are very effective in minimizing weed problem:
+
+```{r pigeonpea-herbicides}
+readxl::read_xlsx("../data/weed_identification/weed_management.xlsx", 
+                  sheet = "herbicides_pigeonpea", skip = 1, col_names = FALSE) %>% 
+  knitr::kable(caption = "Herbicidal control of pigeonpea weeds", 
+               # either way column names should be present
+               col.names = c("Pre emergence herbicides"), format = "latex", booktabs = TRUE) %>% 
+  kableExtra::row_spec(0, bold = TRUE) %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE)
+```
+
+
+Paraquat can be used to control weeds that have already germinated at the time of sowing. There may not be any toxic effect to crop even when paraquat is applied 4 days after sowing. It is common observation that herbicides are slightly inferior to hand weeding in pigeonpea. It is therefore, suggested to give a hand weeding at 40 to 45 days after sowing. It is common observation that herbicides are slightly inferior to hand weeding in pigeonpea. It is therefore, suggested to give a hand weeding at 40 to 45 days after sowing in herbicide applied fields. Marginal superiority of Oxadiazon and Pendimethalin herbicides has been indicated, since they are effectve for longer period than others recommended for weed control in pigeonpea.
+
+### Soybean
+
+First 6 to 7 weeks after seeding is the critical period for crop weed completion. Clean cultivation is, therefore, essential during the critical period.
+
+**Cultural Management**: Since soybean is sown in rows, bullock drawn harrows can be used for controlling the weeds. Two intercultivations, first at 20-30 DAS and the second around 45 DAS along with manual weeding can maintain the soybean field weed free for economic yield
+
+**Use of Herbicides**: A wide range of soil and foliage applied herbicides provides moderate to excellent of wide range of weeds infesting soybean crop. 
+
+```{r chemical-herbicides}
+readxl::read_xlsx("../data/weed_identification/weed_management.xlsx", sheet = "herbicides_soybean", skip = 1, col_names = TRUE) %>% 
+  knitr::kable(caption = "Herbicidal control of soybean weeds", format = "latex", booktabs = TRUE) %>% 
+  kableExtra::kable_styling(position = "center", full_width = FALSE, latex_options = c("HOLD_position")) %>% 
+  kableExtra::row_spec(0, bold = TRUE) %>% 
+  kableExtra::column_spec(1, color = "white", background = "#97767d") %>% 
+  kableExtra::column_spec(2, color = "white", background = "#67161d")
+```
+
+Combination of Trifuralin and alachlor or Triallate(1.0-1.5) applied PPI is the best for season long weed control. PRE combination of Pendimethalin(0.5 -0.75) and Imazethapyr(50-75g) is also equally effective for weed free environment.

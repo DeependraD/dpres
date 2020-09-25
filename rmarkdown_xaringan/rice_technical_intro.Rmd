@@ -1,0 +1,176 @@
+---
+seal: false
+output: 
+  xaringan::moon_reader:
+    self_contained: false
+    lib_dir: common_libs
+    nature:
+      ratio: "16:9"
+    css: ["css/nipo.css", "css/styles.css", "css/ninjutsu.css", "css/kunoichi.css"]
+---
+background-image: url("../images/company_activity/Seed_inspection_maturity.jpg")
+background-size: cover
+
+<br>
+
+.content.vmiddle.center[
+# .big[Rice: A technical introduction to seed production]
+]
+
+.sliderbox.vmiddle.shade_main.center[
+
+### Deependra Dhakal `r anicon::faa('twitter', animate = 'float', rtext='dd_rookie', color='white')` 
+
+### `r anicon::faa('link', animate='vertical', rtext='&nbsp;rookie.rbind.io/contacts', color='white')`
+]
+
+
+---
+class: hide-slide-number center middle
+background-color: #348931
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(tidy = TRUE, cache = TRUE, 
+                      echo = FALSE, 
+                      tidy.opts = list(width.cutoff=50), 
+                      eval = TRUE, 
+                      fig.show = "hold",  fig.align = "center", 
+                      fig.asp = 0.6, message = FALSE, warning = FALSE)
+options(knitr.kable.NA = "", digits = 3)
+options(htmltools.dir.version = FALSE)
+
+library(ggplot2)
+library(magrittr)
+library(dplyr)
+require(readr)
+```
+
+# Introduction
+
+---
+
+## Crop cultivation and production
+
+- Where in Nepal?
+- Almost all districts
+- In locations ranging 50 to 3050 masl.
+- Rice-Maize production system
+- Rice-Wheat production system
+- Spring rice
+- Bhadaiya rice
+- Out of the total of 1,531,494 ha rice area in Nepal (Adjusted for rice cultivation area in year 2011/12, reported by MoAD), 70% is in the Terai, 26% in the hills and 4% in the mountains. 
+
+---
+
+## Seed production
+
+---
+
+## Production economics
+
+- Research report from ANZDEC (2002) reported the production function for rice yield with respect to fertilizers being best explained by a quadratic equation with baseline yield of 2.6 mt/ ha, the first degree polynomial term had a coefficient on fertilization (by NPK) of $11.23\ kg\ rice\ kg^{-1} fertilizer$ and the quadratic term showed the contribution of $\pm 0.04\ kg\ rice\ kg^{-1}\ fertilizer$.
+
+- The study assumed that farmers would indisciminately use 145 kg of NPK per hectare to obtain a case controlled scenario. {But if we consider the marginal value productivity of fertilizer uses, farmers can hardly apply 69-73 kg of fertilizer per hectare if the unit price of fertilizers is around Rs. 15 per kg. Hence unless the condition of trade improves with farmers in terms of the output/input prices, they may not supply any more output.}
+
+---
+
+```{r econometric-prod-func, results='asis'}
+econometric_prod_func <- read_csv("../data/econometric_production_func_rice.csv", comment = "#")
+knitr::kable(econometric_prod_func, format = "html", escape = FALSE,
+             caption = "Econometric production function for rice yields") %>% 
+  kableExtra::kable_styling(bootstrap_options = c("striped"))
+
+```
+
+---
+
+## Cropping system
+
+- Tillage and crop establishment methods, residue management and nitrogen levels affect the crop and water productivity and profitability of wheat production^[Evaluation of different tillage and crop establishment methods for wheat cultivation in Rice-Wheat system in the terai tegion of Nepal, Nepal Agric. Res. J. Vol. 14, 2014].
+
+- Field experiments to evaluate conventional tillage (CT), permanent raised bed (PRB) and zero tillage (ZT) under residue retention and residue removal with three nitrogen levels ($0$, $100$ and $120\ kg\ N\ ha^{-1}$) in wheat on productivity, irrigation water saving and productivity, and profitability were carried out from 2010 to 2012 in rice-wheat cropping system. 
+
+- The experiments were carried out in strip split plot design with three replications. Zero till wheat produced significantly higher grain yield ($2616.5\ kg\ ha^{-1}$), irrigation water saving ($34\%$), irrigation water productivity ($3.35\ kg\ m^{-3}$), and B:C ratio (1.82), as compared to conventional tillage, over two years. Tillage and crop establishment costs were the lowest for ZT ($NRs\ 2275.92\ ha^{-1}$) followed by PRB ($NRs\ 5380.24\ ha^{-1}$) and CT ($NRs\ 7012.5\ ha^{-1}$). While, PRB produced slightly lower grain yield ($2163\ kg\ ha{-1}$), but, the highest water saving ($40.6\%$), comparable water productivity ($2.1\ kg\ m^{-3}$) and higher B:C ratio (1.55) than CT. Net income, $NRs\ ha^{-1}$ , from ZT, PRB, and CT were $35733$, $23641$, and $15830$, respectively.
+
+---
+class: inverse, middle, center
+
+# Rice varieties
+
+---
+
+## Popular rice varieties in Farwestern terai region.
+
+### Sarjoo-52	(Indian)
+
+- Parentage: T(N)1 x Kashi,
+- Year released: 1982,
+- Days to maturity: 130-133 (135),
+- Irrigated,
+- Semi dwarf (98 cm), erect,
+- Grains: long bold, AWP, white,
+- moderately resistant to BLB,
+- Yield: 50-60 Q/ha
+- Recommended domain: Uttar Pradesh
+
+---
+
+### Samba Mahsuri (Indian)
+
+- High yielding fine grain rice variety released by Directorate of Rice Research (DRR), Hyderabad, India.
+- Developed using Marker assisted selection and has three major bacterial blight resistance genes Xa21, xa13 and xa5 (supported by MLT research carried out by AICRIP, India).
+- Parentage: GEB 24xT(N) 1
+- Released from research station: Bapatla (ANGRAU)
+- Year of release: 1986
+- Grain Type: Medium slender, Straw glume
+- Yield(t/ha): 4.5 to 5.0
+- Days to maturity: 145-150
+- Special features: Dark green erect narrow leaves. Has good cooking quality.
+- Recommended area: Telangana and Rayalasema areas particularly, Andhra Pradesh in generalin Kharif season.
+
+---
+
+### Hardinath 1
+
+- Time of sowing: $15^{th}$ ashar - $15^{th}$ shrawan
+- Spacing: $15\times15$
+- Maturity days: 120 days
+
+### Radha 4
+
+- Time of sowing: $15^{th}$ ashar - $15^{th}$ shrawan
+- Spacing: $15\times15$
+- Maturity days: 125 days
+
+---
+
+### Sukkha-3
+
+- Time of sowing: $15^{th}$ ashar - $15^{th}$ shrawan
+- Spacing: $15\times15$
+- Maturity days: 124 days
+
+### Ramdhan 
+
+- Time of sowing: $10^{th}$ ashar - last of ashar
+- Spacing: $20\times15$
+- Maturity days: 135 days
+
+---
+
+### Sabitri
+
+- Time of sowing: $10^{th}$ ashar - last of ashar
+- Spacing: $20\times20$
+- Maturity days: 145 days (Also for Radha-14)
+
+## Sambha mahsuli sub-1
+
+- Time of sowing: $5^{th}$ ashar - $20^{th}$ of ashar
+- Spacing: $20\times20$
+- Maturity days: 150 days
+
+## Sworna sub-1
+
+- Maturity days: 155 days
+

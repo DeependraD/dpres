@@ -1,0 +1,287 @@
+---
+title: "Solanaceous crops"
+author: 
+  - Deependra Dhakal 
+date: 2019
+output:   
+  beamer_presentation:
+    incremental: false  
+    theme: "Frankfurt"  
+    colortheme: "beaver"
+    toc: true   
+    slide_level: 2
+    keep_tex: true
+    includes:
+      in_header: beamer_header.tex
+classoption: "aspectratio=169"
+header-includes: 
+- \AtBeginSubsection{}
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+require(tidyverse)
+set.seed(453)
+# invalidate cache when the package version changes
+knitr::opts_chunk$set(tidy = FALSE, echo = FALSE, 
+                  message = FALSE, warning = FALSE,
+                  out.width = "45%")
+options(knitr.table.format = "latex")
+options(knitr.kable.NA = "", digits = 2)
+options(kableExtra.latex.load_packages = FALSE)
+```
+
+# Tomato ( _Lycopersicon esculentum_)
+
+## Background
+
+- Poor man's orange
+- Immediate ancestor: _L. esculentum_ Var. _cerasiforme_
+- Varieties can broadly be classified into: 
+  - Determinate: Terminal portion of stem ending in flowering shoot; Each node produces flower
+  - Indeterminate: Terminal portion of stem is growing and growth is unchecked. Flowers are produced every 3rd internode.
+- Tomato is winter season crop for terai region and summer crop for mid hills
+- Color pigments for tomato:
+  - Red: Lycopene
+  - Yellow: Carotenoid
+  - Prolycopene: Tangerine
+
+##
+
+- Tomato receives attention from the National Seed Vision with regard as crop that have importance for import substitution (Srijana Hybrid and Lapsigede) and export promotion.
+- Asia-Pacific Seed Association (APSA) has initiated harmonization process of seed regulations at the regional level in Asia. APSA has selected 10 crops, which include maize, rice, sunflower, cabbage, cauliflower, cucumber, eggplant, hot pepper, tomato and watermelon for harmonization. Although, Nepal has not fully participated in the harmonization process yet.
+
+## Climate
+
+- Optimum temperature: $20^\circ C$ for night and $30^\circ C$ for day
+- Red and yellow pigments develop at $10-25^\circ C$
+- It has been reported that lycopene formation is favoured at temperatures ranging from $16-21^\circ C$ and unfavoured at temperature values above $30^\circ C$
+- Lycopene is destroyed above $40^\circ C$.
+
+## Soil
+
+- pH of 6.7 is ideal.
+- Soil of Sarlahi district is very well suited because of loamy texture with high organic matter content.
+
+## Cultivation
+
+- Seedling is raised in beds of 2 x 1m. A single bed suffices for a ropani of planting.
+- Spacing:
+  - Pusa ruby: 60 x 60 sqcm
+  - Pusa early dwarf: 60 x 60 sqcm
+  - Roma: 60 x 45 sqcm
+  - Monprecos: 75 x 60 sqcm
+  
+## Manuring and fertilization
+
+- 1 mt FYM and 5:3:4 kg NPK/ropani
+
+## Varieties
+
+\footnotesize
+
+- A detailed listing of tomato varieties can be assessed at Wikipedia^[https://en.wikipedia.org/wiki/List_of_tomato_cultivars]
+- National Seed Vision, 2013-25^[http://extwprlegs1.fao.org/docs/pdf/nep147056.pdf] enlists NCL, Lapsigede, Monprecos, and Pusarubi varieties for variety maintenance and seed production pocket/zone specification. Midhills, inner terai and terai regions are mentioned.
+- Hybrid variety of tomato (Srijana) was registered in 2010.
+- Pusa Ruby
+  - Indeterminate type (IARI)
+  - Early maturing (60 DAT)
+  - Released: 2046 BS
+- Pusa Early Dwarf
+  - Determinate
+  - Early maturing
+  - Terai and mid-hills
+- Coimbatore-1
+  - Tamil Nadu Agricultural University
+  - Determinate type
+
+##
+
+- Mangala
+  - F1 hybrid determinate type
+  - For hills
+- Best of all
+  - Indeterminate
+  - IARI
+- Roma
+  - IARI, determinate type
+  - Early (Midhills and terai)
+  - Suitable for processing
+  - Released: 2051
+- Monprecos
+  - Indeterminate type, OP
+  - Medium maturing
+  - Tolerant to late blight disease
+  - Mid and high hills
+  - Released: 2051
+
+##
+
+- NCL-1 (CL-1131)
+  - OP
+  - Head and wilt resistant
+  - Released: 2051 BS
+  - Indeterminate type
+- Srijana
+  - National hybrid
+  - Maturity: 70-80 DAT
+  - Bacterial wilt resistant
+  - Released: 2066 BS
+- Swaraksha
+  - Hybrid
+  - Registered: 2066 BS
+
+##
+
+- NS-2535
+  - Hybrid
+  - Released: 2066 BS
+  - Production: 140-150 mt/ha
+- Dalila
+  - Hybrid
+  - Terai, mid hills and high hills
+  - Released: 2067 BS
+- Others: Haryana Selection 102 (OP), Ceres, NS-53, Ahmita, Nova, Xiw, Sens, NS-515, VLHH3, Spectra, Gaurav-555, Marina, Astra-717, Savera, Eureka, NS-719
+- Varieties registered in 2067 BS: Madhuri, Makis, Jamuna, Opel
+- OPVs: Roma (Determinate), Pusa Ruby (Indeterminate), Monprecos (Indeterminate), NCL-1
+
+## Time of planting
+
+- High-hills: 
+  - Chaitra-Baisakh (Sowing)
+  - Baisakh-Jestha (Transplanting)
+- Mid-hills:
+  - Falgun-Chaitra (Sowing)
+  - Chaitra-Baisakh (Transplanting)
+- Lower-hills:
+  - Magh-Falgun (Sowing)
+  - Falgun-Chaitra (Transplanting)
+- Terai:
+  - Ashwin-Kartik (Sowing)
+  - Kartik-Mangsir (Transplanting)
+
+##
+
+- Indeterminate types are also called staking type
+- Yield almost double than unstaked
+- Fruits are attractive, uniform and high quality
+- Insect-pest and diease also minimized
+- Stakign utmost necessary when growing in rainy season
+
+##
+
+Yield: 1000-1500 kg
+
+## Seed production
+
+- Extraction has 3 methods:
+  a. Fermentation method
+  b. Alkali treatment
+    - Slime mass is scooped out and treated with 300 gm of washing soda in 4 ltr of boiling water in equal volume.
+  c. Acid treatment
+    - Slime mass + Acid HCL (0.1 N) \@ 75 ml/12 kg of fruit material
+- Seed yield: 100-120 kg/ha
+
+## Disease
+
+\footnotesize
+
+- Damping off
+  - Pythium, Phytophthora, Sclerotinia (Active in low temperatures)
+  - Rhizoctonia (Severe in high temperatures)
+- Control
+  - Sparse planting, light irrigation, decomposed manure
+  - Burning of 6-12 inches of farm trash on seed bed
+  - Drenching of nursery bed with Dithane M-45 \@ 3 gm/ltr of water.
+  - Seed treatment with Agrosan GN, Captan or Thiram \@ 2.5 gm/kg of seed.
+- Fusarium wilt
+  - _Fusarium oxysporum_ f.sp. _lycopersici_
+  - Symptom: Upward and inward wilting of leaves
+  - Advanced stage: Browning of vascular system seen in cross-section of lower stem
+- Control
+  - Seed treatment with Bavistin 2.5 gm/kg of seed
+  - Crop rotation for long period
+  - Trash burning
+- Bacterial diseases
+  - Bacterial wilt ( _Pseudomonas solanacearum_)
+  - Symptom: Wilting, stunting and yellowing of foliage and collapse of plants
+
+# Brinjal (AUbergine, Eggplant)
+
+##
+
+- Self pollinated
+- Winter season crop for terai and summer and rainy season crop for hills
+- Can't produce fruit below temperature of $17^\circ C$ and above $35^\circ C$
+- Silt loam and clay loam are the most preferred soil types
+
+## Varieties
+
+- Nurki
+  - OPV (60 - 65 DAT)
+  - Terai and mid-hills
+  - Registered: 2051 BS
+  - Bears fruits in cluster
+- Arka Keshav
+  - OPV (70-75 DAT)
+  - Registered: 2066
+  - Terai and mid-hills
+
+##
+
+- Early maturing: Pusa purple long (PPL), Pusa kranti
+- Mid season: Pusa cluster, Nurki
+- Late variety: Sarlahi green
+
+##
+
+- Seed rate: 25-30 gm/ropani
+- Spacing
+  - Tall varieties (Sarlahi Green, Nurki, Pusa Kranti): 75 x 45 sqcm
+  - Medium and short varieties (PPL, Pusa cluster): 60 x 45 sqcm
+  
+##
+
+- Yield: 1500-2000 kg/ropani
+
+##
+
+- Average seed yield: 100-120 kg/ha
+
+##
+
+- Pusa purple long is a photoinsensitive type
+- Nurki (Hard skinned)
+
+# Hot pepper and sweet pepper
+
+##
+
+- _Capsicum frutescens_ and _Capsicum annum_
+- Plant annual and fruits borne singly, _Capsicum annum_
+- Plant perennial and fruits borne in goups, _C. frutescens_
+
+##
+
+- Seed rate: 3 kg/ha
+
+## Cultivars
+
+1. Sweet pepper
+  - Californe (California wonder)
+    - OPV (80-90 DAT)
+    - 16-20 mt/ha yield
+    - Suitable for terai, mid-hills and high-hills
+    - Registered: 2051 BS
+  - Sagar
+    - OPV (65-75 DAT)
+    - 76.8 mt/ha
+
+# Bibliography
+
+## References
+
+```{r bib, include=FALSE}
+# create a bib file for the R packages used in this document
+# knitr::write_bib(c('base', 'rmarkdown', "knitr", "tidyverse"), file = '../bib/references.bib')
+```

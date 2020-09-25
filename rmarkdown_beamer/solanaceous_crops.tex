@@ -1,0 +1,822 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+  aspectratio=169]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usetheme[]{Frankfurt}
+\usecolortheme{beaver}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Solanaceous crops},
+  pdfauthor={Deependra Dhakal},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{tikz} % required for image opacity change
+\usepackage[absolute,overlay]{textpos} % for text formatting
+
+% this font option is amenable for beamer
+\setbeamerfont{caption}{size=\tiny}
+
+% redefine section page format
+\AtBeginSection{
+   \frame{\sectionpage}
+}
+
+\makeatletter
+\setbeamertemplate{section page}
+{
+  \begingroup
+    \centering
+%    {\usebeamerfont{section name}\usebeamercolor[fg]{section name}\sectionname~\insertsectionnumber}
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=12pt,center,colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]{section title}
+      \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+  \endgroup
+}
+\makeatother
+
+\title{Solanaceous crops}
+\author{Deependra Dhakal}
+\date{2019}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}[allowframebreaks]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+\hypertarget{tomato-lycopersicon-esculentum}{%
+\section{\texorpdfstring{Tomato ( \emph{Lycopersicon
+esculentum})}{Tomato ( Lycopersicon esculentum)}}\label{tomato-lycopersicon-esculentum}}
+
+\begin{frame}{Background}
+\protect\hypertarget{background}{}
+\begin{itemize}
+\tightlist
+\item
+  Poor man's orange
+\item
+  Immediate ancestor: \emph{L. esculentum} Var. \emph{cerasiforme}
+\item
+  Varieties can broadly be classified into:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Determinate: Terminal portion of stem ending in flowering shoot;
+    Each node produces flower
+  \item
+    Indeterminate: Terminal portion of stem is growing and growth is
+    unchecked. Flowers are produced every 3rd internode.
+  \end{itemize}
+\item
+  Tomato is winter season crop for terai region and summer crop for mid
+  hills
+\item
+  Color pigments for tomato:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Red: Lycopene
+  \item
+    Yellow: Carotenoid
+  \item
+    Prolycopene: Tangerine
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section}{}
+\begin{itemize}
+\tightlist
+\item
+  Tomato receives attention from the National Seed Vision with regard as
+  crop that have importance for import substitution (Srijana Hybrid and
+  Lapsigede) and export promotion.
+\item
+  Asia-Pacific Seed Association (APSA) has initiated harmonization
+  process of seed regulations at the regional level in Asia. APSA has
+  selected 10 crops, which include maize, rice, sunflower, cabbage,
+  cauliflower, cucumber, eggplant, hot pepper, tomato and watermelon for
+  harmonization. Although, Nepal has not fully participated in the
+  harmonization process yet.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Climate}
+\protect\hypertarget{climate}{}
+\begin{itemize}
+\tightlist
+\item
+  Optimum temperature: \(20^\circ C\) for night and \(30^\circ C\) for
+  day
+\item
+  Red and yellow pigments develop at \(10-25^\circ C\)
+\item
+  It has been reported that lycopene formation is favoured at
+  temperatures ranging from \(16-21^\circ C\) and unfavoured at
+  temperature values above \(30^\circ C\)
+\item
+  Lycopene is destroyed above \(40^\circ C\).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Soil}
+\protect\hypertarget{soil}{}
+\begin{itemize}
+\tightlist
+\item
+  pH of 6.7 is ideal.
+\item
+  Soil of Sarlahi district is very well suited because of loamy texture
+  with high organic matter content.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivation}
+\protect\hypertarget{cultivation}{}
+\begin{itemize}
+\tightlist
+\item
+  Seedling is raised in beds of 2 x 1m. A single bed suffices for a
+  ropani of planting.
+\item
+  Spacing:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Pusa ruby: 60 x 60 sqcm
+  \item
+    Pusa early dwarf: 60 x 60 sqcm
+  \item
+    Roma: 60 x 45 sqcm
+  \item
+    Monprecos: 75 x 60 sqcm
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Manuring and fertilization}
+\protect\hypertarget{manuring-and-fertilization}{}
+\begin{itemize}
+\tightlist
+\item
+  1 mt FYM and 5:3:4 kg NPK/ropani
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Varieties}
+\protect\hypertarget{varieties}{}
+\footnotesize
+
+\begin{itemize}
+\tightlist
+\item
+  A detailed listing of tomato varieties can be assessed at
+  Wikipedia\footnote<.->{\url{https://en.wikipedia.org/wiki/List_of_tomato_cultivars}}
+\item
+  National Seed Vision, 2013-25\footnote<.->{\url{http://extwprlegs1.fao.org/docs/pdf/nep147056.pdf}}
+  enlists NCL, Lapsigede, Monprecos, and Pusarubi varieties for variety
+  maintenance and seed production pocket/zone specification. Midhills,
+  inner terai and terai regions are mentioned.
+\item
+  Hybrid variety of tomato (Srijana) was registered in 2010.
+\item
+  Pusa Ruby
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Indeterminate type (IARI)
+  \item
+    Early maturing (60 DAT)
+  \item
+    Released: 2046 BS
+  \end{itemize}
+\item
+  Pusa Early Dwarf
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Determinate
+  \item
+    Early maturing
+  \item
+    Terai and mid-hills
+  \end{itemize}
+\item
+  Coimbatore-1
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tamil Nadu Agricultural University
+  \item
+    Determinate type
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Mangala
+
+  \begin{itemize}
+  \tightlist
+  \item
+    F1 hybrid determinate type
+  \item
+    For hills
+  \end{itemize}
+\item
+  Best of all
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Indeterminate
+  \item
+    IARI
+  \end{itemize}
+\item
+  Roma
+
+  \begin{itemize}
+  \tightlist
+  \item
+    IARI, determinate type
+  \item
+    Early (Midhills and terai)
+  \item
+    Suitable for processing
+  \item
+    Released: 2051
+  \end{itemize}
+\item
+  Monprecos
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Indeterminate type, OP
+  \item
+    Medium maturing
+  \item
+    Tolerant to late blight disease
+  \item
+    Mid and high hills
+  \item
+    Released: 2051
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-2}{}
+\begin{itemize}
+\tightlist
+\item
+  NCL-1 (CL-1131)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    OP
+  \item
+    Head and wilt resistant
+  \item
+    Released: 2051 BS
+  \item
+    Indeterminate type
+  \end{itemize}
+\item
+  Srijana
+
+  \begin{itemize}
+  \tightlist
+  \item
+    National hybrid
+  \item
+    Maturity: 70-80 DAT
+  \item
+    Bacterial wilt resistant
+  \item
+    Released: 2066 BS
+  \end{itemize}
+\item
+  Swaraksha
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Hybrid
+  \item
+    Registered: 2066 BS
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-3}{}
+\begin{itemize}
+\tightlist
+\item
+  NS-2535
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Hybrid
+  \item
+    Released: 2066 BS
+  \item
+    Production: 140-150 mt/ha
+  \end{itemize}
+\item
+  Dalila
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Hybrid
+  \item
+    Terai, mid hills and high hills
+  \item
+    Released: 2067 BS
+  \end{itemize}
+\item
+  Others: Haryana Selection 102 (OP), Ceres, NS-53, Ahmita, Nova, Xiw,
+  Sens, NS-515, VLHH3, Spectra, Gaurav-555, Marina, Astra-717, Savera,
+  Eureka, NS-719
+\item
+  Varieties registered in 2067 BS: Madhuri, Makis, Jamuna, Opel
+\item
+  OPVs: Roma (Determinate), Pusa Ruby (Indeterminate), Monprecos
+  (Indeterminate), NCL-1
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Time of planting}
+\protect\hypertarget{time-of-planting}{}
+\begin{itemize}
+\tightlist
+\item
+  High-hills:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Chaitra-Baisakh (Sowing)
+  \item
+    Baisakh-Jestha (Transplanting)
+  \end{itemize}
+\item
+  Mid-hills:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Falgun-Chaitra (Sowing)
+  \item
+    Chaitra-Baisakh (Transplanting)
+  \end{itemize}
+\item
+  Lower-hills:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Magh-Falgun (Sowing)
+  \item
+    Falgun-Chaitra (Transplanting)
+  \end{itemize}
+\item
+  Terai:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ashwin-Kartik (Sowing)
+  \item
+    Kartik-Mangsir (Transplanting)
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-4}{}
+\begin{itemize}
+\tightlist
+\item
+  Indeterminate types are also called staking type
+\item
+  Yield almost double than unstaked
+\item
+  Fruits are attractive, uniform and high quality
+\item
+  Insect-pest and diease also minimized
+\item
+  Stakign utmost necessary when growing in rainy season
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-5}{}
+Yield: 1000-1500 kg
+\end{frame}
+
+\begin{frame}{Seed production}
+\protect\hypertarget{seed-production}{}
+\begin{itemize}
+\tightlist
+\item
+  Extraction has 3 methods:
+
+  \begin{enumerate}
+  [a.]
+  \tightlist
+  \item
+    Fermentation method
+  \item
+    Alkali treatment
+  \end{enumerate}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Slime mass is scooped out and treated with 300 gm of washing soda in
+    4 ltr of boiling water in equal volume.
+  \end{itemize}
+
+  \begin{enumerate}
+  [a.]
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    Acid treatment
+  \end{enumerate}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Slime mass + Acid HCL (0.1 N) @ 75 ml/12 kg of fruit material
+  \end{itemize}
+\item
+  Seed yield: 100-120 kg/ha
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Disease}
+\protect\hypertarget{disease}{}
+\footnotesize
+
+\begin{itemize}
+\tightlist
+\item
+  Damping off
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Pythium, Phytophthora, Sclerotinia (Active in low temperatures)
+  \item
+    Rhizoctonia (Severe in high temperatures)
+  \end{itemize}
+\item
+  Control
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Sparse planting, light irrigation, decomposed manure
+  \item
+    Burning of 6-12 inches of farm trash on seed bed
+  \item
+    Drenching of nursery bed with Dithane M-45 @ 3 gm/ltr of water.
+  \item
+    Seed treatment with Agrosan GN, Captan or Thiram @ 2.5 gm/kg of
+    seed.
+  \end{itemize}
+\item
+  Fusarium wilt
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Fusarium oxysporum} f.sp. \emph{lycopersici}
+  \item
+    Symptom: Upward and inward wilting of leaves
+  \item
+    Advanced stage: Browning of vascular system seen in cross-section of
+    lower stem
+  \end{itemize}
+\item
+  Control
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Seed treatment with Bavistin 2.5 gm/kg of seed
+  \item
+    Crop rotation for long period
+  \item
+    Trash burning
+  \end{itemize}
+\item
+  Bacterial diseases
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Bacterial wilt ( \emph{Pseudomonas solanacearum})
+  \item
+    Symptom: Wilting, stunting and yellowing of foliage and collapse of
+    plants
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\hypertarget{brinjal-aubergine-eggplant}{%
+\section{Brinjal (AUbergine,
+Eggplant)}\label{brinjal-aubergine-eggplant}}
+
+\begin{frame}{}
+\protect\hypertarget{section-6}{}
+\begin{itemize}
+\tightlist
+\item
+  Self pollinated
+\item
+  Winter season crop for terai and summer and rainy season crop for
+  hills
+\item
+  Can't produce fruit below temperature of \(17^\circ C\) and above
+  \(35^\circ C\)
+\item
+  Silt loam and clay loam are the most preferred soil types
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Varieties}
+\protect\hypertarget{varieties-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Nurki
+
+  \begin{itemize}
+  \tightlist
+  \item
+    OPV (60 - 65 DAT)
+  \item
+    Terai and mid-hills
+  \item
+    Registered: 2051 BS
+  \item
+    Bears fruits in cluster
+  \end{itemize}
+\item
+  Arka Keshav
+
+  \begin{itemize}
+  \tightlist
+  \item
+    OPV (70-75 DAT)
+  \item
+    Registered: 2066
+  \item
+    Terai and mid-hills
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-7}{}
+\begin{itemize}
+\tightlist
+\item
+  Early maturing: Pusa purple long (PPL), Pusa kranti
+\item
+  Mid season: Pusa cluster, Nurki
+\item
+  Late variety: Sarlahi green
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-8}{}
+\begin{itemize}
+\tightlist
+\item
+  Seed rate: 25-30 gm/ropani
+\item
+  Spacing
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tall varieties (Sarlahi Green, Nurki, Pusa Kranti): 75 x 45 sqcm
+  \item
+    Medium and short varieties (PPL, Pusa cluster): 60 x 45 sqcm
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-9}{}
+\begin{itemize}
+\tightlist
+\item
+  Yield: 1500-2000 kg/ropani
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-10}{}
+\begin{itemize}
+\tightlist
+\item
+  Average seed yield: 100-120 kg/ha
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-11}{}
+\begin{itemize}
+\tightlist
+\item
+  Pusa purple long is a photoinsensitive type
+\item
+  Nurki (Hard skinned)
+\end{itemize}
+\end{frame}
+
+\hypertarget{hot-pepper-and-sweet-pepper}{%
+\section{Hot pepper and sweet
+pepper}\label{hot-pepper-and-sweet-pepper}}
+
+\begin{frame}{}
+\protect\hypertarget{section-12}{}
+\begin{itemize}
+\tightlist
+\item
+  \emph{Capsicum frutescens} and \emph{Capsicum annum}
+\item
+  Plant annual and fruits borne singly, \emph{Capsicum annum}
+\item
+  Plant perennial and fruits borne in goups, \emph{C. frutescens}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-13}{}
+\begin{itemize}
+\tightlist
+\item
+  Seed rate: 3 kg/ha
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cultivars}
+\protect\hypertarget{cultivars}{}
+\begin{enumerate}
+\tightlist
+\item
+  Sweet pepper
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Californe (California wonder)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    OPV (80-90 DAT)
+  \item
+    16-20 mt/ha yield
+  \item
+    Suitable for terai, mid-hills and high-hills
+  \item
+    Registered: 2051 BS
+  \end{itemize}
+\item
+  Sagar
+
+  \begin{itemize}
+  \tightlist
+  \item
+    OPV (65-75 DAT)
+  \item
+    76.8 mt/ha
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\hypertarget{bibliography}{%
+\section{Bibliography}\label{bibliography}}
+
+\begin{frame}{References}
+\protect\hypertarget{references}{}
+\end{frame}
+
+\end{document}

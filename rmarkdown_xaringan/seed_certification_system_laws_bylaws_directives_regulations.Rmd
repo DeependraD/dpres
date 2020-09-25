@@ -1,0 +1,69 @@
+---
+seal: false
+output: 
+  xaringan::moon_reader:
+    self_contained: false
+    lib_dir: common_libs
+    nature:
+      ratio: "16:9"
+    css: ["css/nipo.css", "css/styles.css", "css/ninjutsu.css", "css/kunoichi.css"]
+---
+background-image: url("../images/company_activity/Seed_processing1.jpg")
+background-size: cover
+
+<br>
+
+.content.vmiddle.center[
+# .big[Seed certification system in Nepal]
+]
+
+.sliderbox.vmiddle.shade_main.center[
+
+### Deependra Dhakal `r anicon::faa('twitter', animate = 'float', rtext='dd_rookie', color='white')` 
+
+### `r anicon::faa('link', animate='vertical', rtext='&nbsp;rookie.rbind.io/contacts', color='white')`
+]
+
+
+---
+class: hide-slide-number center middle
+background-color: #348931
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(tidy = TRUE, cache = TRUE, 
+                      echo = FALSE, 
+                      tidy.opts = list(width.cutoff=50), 
+                      eval = TRUE, 
+                      fig.show = "hold",  fig.align = "center", 
+                      fig.asp = 0.6, message = FALSE, warning = FALSE)
+options(knitr.kable.NA = "", digits = 3)
+options(htmltools.dir.version = FALSE)
+
+library(ggplot2)
+library(magrittr)
+library(dplyr)
+require(readr)
+```
+
+# Terminologies and Definitions
+
+---
+
+- **Act**: Seed act, 2045
+- **Regulation**: Seed regulation, 2069
+- **Directives**: Seed certification directives; Approved date: 2074-07-06
+- **Quality control body**: Seed quality control center or other bodies specified by SQCC that works for on Seed quality.
+- **Breeder**: Any person or organization issuing first use of a new variety after breeding or selection.
+- **Germplasm conservation**
+- _**Nissa**_
+- **Seed certifying body**
+- **Seed producer**
+
+---
+
+# Provision of seed certification and truthful labeling
+
+- Seed production management procedure and labelling of container
+- Who certifies the seed? $\Longrightarrow$ Seed quality control center and regional laboratories
+- Who inspects the crop grown for seed certification? $\Longrightarrow$ Government authorized inspector, but anyone trained to do so can inspect production of improved level seed.
+- For central and regional level seed cerification, inspection of field, harvesting, threshing, processing and storage may be delegated to district level inspectors. But, only technical officers will be permitted to take sample, pass the sample to laboratory, request for seed treatment and verify with signature the label contained in the container.

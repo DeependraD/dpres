@@ -1,0 +1,260 @@
+---
+title: "Field preparation for vegetable crops"
+subtitle: "A how to manual"
+author: "Deependra Dhakal"
+date: "`r Sys.Date()`"
+output: tint::tintPdf
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+library(tint)
+library(tidyverse)
+# invalidate cache when the package version changes
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tint'), 
+                      echo = FALSE)
+options(htmltools.dir.version = FALSE)
+```
+
+# Introduction {-}
+
+Vegetables are grown on a small scale as well as a large commercial scale. Some vegetables are grown on commercial scale in greenhouses. Small-scale vegetable production is an activity that may be undertaken year-round by people in a wide variety of situations (either as hobby or to provide for small family needs). The size of the project depends on what is available in terms of land and how much time and effort one is willing to devote to the activity. Larger-scale vegetable farming may be used to produce more than one needs so that the surplus can be marketed for supplemental income. Most vegetable production occurs outdoors in the field, in a relatively large scale. Among various factors that determine the success of field cultivated vegetable crops are:
+
+1. Fertility of soil and terrain that is conducive to mechanization.
+
+2. Field crops are relatively more tolerant of wide variations in meteorological/climatic factors than vegetables. Vegetables are intolerant of large fluctuations in temperature.
+
+3. Vegetables comprise large amounts of water. Successful production of quality produce depends on the availability of water throughout the growing season.
+
+4. Vegetable production is labor intensive. Human labor is essential for some operations that are still challenging to automate or mechanize in some crops. Vegetable production is hence economical in regions where cheap labor is plentiful.
+
+5. Vegetables are in high demand year-round. Regions where crop production is possible year-round are suitable for vegetable production.
+
+Aside from the above mentioned factors, human mangement of land devoted to cultivation is also an important enabling factor for successful production. The amount of human intervention in checking growth hampering factors and in promoting the health and vigor of crop is crucial to mantaining production and productivity. One of the foremost such factors, the soil fertility, comes as a result of regular fertilization/manuring and good tilth.
+
+Good tilth refers to the favourable physical conditions for germination and growth of crops. Tilth indicates two properties of soil viz., the size distribution of aggregates and mellowness or friability of soil. The relative proportion of different sized soil aggregates is known as size distribution of soil aggregates. Mellowness or friability is that property of soil by which the clods when dry become more crumbly.
+
+# Importance {-}
+
+- To prepare ideal seed bed favourable for seed germination, growth and establishment;
+- To loosen the soil for easy root penetration and proliferation;
+- To remove other sprouting materials in the soil;
+- To control weeds;
+- To certain extent to control pest and diseases which harbour in the soil;
+- To improve soil physical conditions;
+- To ensure adequate aeration in the root zone which in turn favour for microbial and biochemical activities;
+- To modify soil temperature;
+- To break hard soil pans and to improve drainage facility;
+- To incorporate crop residues and organic matter left over;
+- To conserve soil by minimizing the soil erosion;
+- To conserve the soil moisture;
+- To harvest efficiently the effective rain water;
+- To assure the through mixing of manures, fertilizers and pesticides in the soil;
+- To facilitate water infiltration and thus increasing the water holding capacity of the soil, and
+- To level the field for efficient water management.
+
+# Classification {-}
+
+Field preparation (also called preparatory tillage) can be divided into three types, viz.,
+
+- Primary tillage: It is normally the deepest operation performed during the period between two crops. The main objective is to control weeds to incorporate crop stubbles and to restore soil structure.
+- Secondary tillage: It refers to shallow tillage operation that is done after primary tillage to bring a good soil tilth. Incorporation of manures and fertilizers, leveling, mulching, forming ridges and furrows are the main objectives. It includes cultivating, harrowing, pulverizing, raking, leveling and ridging operations.
+- Seed bed preparation:  It refers to a very shallow operation intended to prepare a seed bed or make the soil to suit for planting. Weed control and structural development of the soil are the objectives
+
+# Importance {-}
+
+- To prepare ideal seed bed favourable for seed germination, growth and establishment;
+- To loosen the soil for easy root penetration and proliferation;
+- To remove other sprouting materials in the soil;
+- To control weeds;
+- To certain extent to control pest and diseases which harbour in the soil;
+- To improve soil physical conditions;
+- To ensure adequate aeration in the root zone which in turn favour for microbial and biochemical activities;
+- To modify soil temperature;
+- To break hard soil pans and to improve drainage facility;
+- To incorporate crop residues and organic matter left over;
+- To conserve soil by minimizing the soil erosion;
+- To conserve the soil moisture;
+- To harvest efficiently the effective rain water;
+- To assure the through mixing of manures, fertilizers and pesticides in the soil;
+- To facilitate water infiltration and thus increasing the water holding capacity of the soil, and
+- To level the field for efficient water management.
+
+# Steps and types {-}
+
+Field (also called preparatory tillage) can be divided into three types viz., 
+
+- Primary tillage: It is normally the deepest operation performed during the period between two crops. The main objective is to control weeds to incorporate crop stubbles and to restore soil structure.
+- Secondary tillage: It refers to shallow tillage operation that is done after primary tillage to bring a good soil tilth. Incorporation of manures and fertilizers, leveling, mulching, forming ridges and furrows are the main objectives. It includes cultivating, harrowing, pulverizing, raking, leveling and ridging operations.
+- Seed bed preparation:  It refers to a very shallow operation intended to prepare a seed bed or make the soil to suit for planting. Weed control and structural development of the soil are the objectives
+
+# Field preparation for Cole crops {-}
+
+Cultivated vegetable cole crops are:
+
+- _Brassica oleracea_ var. _capitata_ L. -- Cabbage
+- _Brassica oleracea_ var. _botrytis_ L. -- Cauliflower
+- _Brassica campestris_ L. -- Turnip and related crops
+- _Brassica campestris_ subsp. _rapifera_ Metz. -- True turninp
+- _Brassica campestris_ subsp. _chinensis_ Jusl. -- Chinese mustard, pak-choi
+- _Brassica campestris_ subsp. _perkinensis_ (Lour.) Rupr. -- Chinese cabbage, pe-tsai
+- _Brassica juncea_ (L.) Czern. and Coss. -- Indian or brown mustard, leaf mustard
+- _Brassica nigra_ (L.) Koch -- black mustard
+- _Sinapis alba_ L. -- white mustard
+
+## Cauliflower and cabbage
+
+Both sandy and heavy clay soils are suitable, but the former are preferred for early varieties while the latter are preferred for late ones. A provision for good drainage is a must, particularly for autumn or winter crops, as the young seedlings that overwinter in the field are very sensitive to an excess of soil moisture. The plants are also sensitive to soil reactions that should be between pH 6.0 and 6.5. In saline soils with pH above 6.5, the foliage becomes dark but the leaf margins die back and the plants are highly susceptible to blackleg diseases in such soils. These soils are especially unsuitable for summer crops since the salt level rises under drought conditions and high temperatures. As often as possible, the soil should be tilled shallow to maintain good tilth. The soil for cabbage crops should have a uniform texture to its 30-cm depth. It is also seen that moisture supply and cultivation practices influence the root development.
+
+Field preparation is started one month prior to sowing. Initially the field is ploughed deep with a soil turning plough followed by, crust breaking, stubble and weed removal.
+
+The seeds are sown in raised nursery beds. Under ideal conditions, 85% seed germination is very common. Seedlings with three to four true leaves become ready for transplanting within 3-4 weeks of sowing.
+
+Seedlings of early sown crops should be planted on low ridges, otherwise, heavy rains can easily destroy all the tender plants. Rainy season planting beds, if constructed, should be raised 15-20 cm from surface; each bed of 80-120 cm width is appropriate for provisioning of drainage. The seedlings should be hardened, spacing them at 6.5 ? 6.5 cm both row to row and plant to plant for final transplanting. They should be transplanted in the fields according to the soil, season, and variety. The seedlings should be transplanted in the bottom or on the side of the furrow according to the soil type in such a way that they will not be flooded by irrigation water. The plants produce heads prematurely when kept too long in seed beds or under moisture stress. The gaps resulting from the death of seedlings should be filled in as promptly as possible.
+
+# Field preparation for Root crops {-}
+
+Sweet potato, carrot, radish, taro, yam, beet, cassava are some of the important root vegetables grown in Nepal. Most root crops are hardy to frost. 
+
+A heavy clay soil hinders the development of roots. Therefore, the best quality crops are be obtained in sandy loam, sandy or silty soils, with a high organic content, that are deep, well drained, and rich in plant nutrients. The entire dose of farmyard manure should be given at the time of land preparation, while the inorganic fertilizers are applied at the time of sowing.
+
+## Radish and turnip
+
+Radish and turnips are susceptible to heat injury, and have relatively low tolerance for soil salinity. radish can be grown on a wide range of soils, but a deep, friable, well-drained, and rich sandy loam or alluvial soil produces the best quality crop. The presence of ample humus and the ability of the soil to retain moisture are the important factors to be considered in radish production. Radish crops tolerate slightly acid conditions and a soil pH between 5.5 and 6.8 is suitable. Heavier soils such as clay or silt clay produce small, misshapen, and fibrous roots. A general compound fertilizer can be applied during site preparation at a rate of 30 $g\ m^{-2}$ but excessive nitrogen should be avoided as leaves will be produced at the expense of the radish 'root'^[the radish 'root' is a swollen hypocotyl].
+
+Field preparation should include repeated ploughings, harrowings, and leveling to achieve fine tilth. Old debris or the remains of a previous crop should be removed completely before final preparation.
+
+In _R. sativus_ crops, the seed is generally broadcasted over a prepared bed and raked in, followed by a light watering. A light mulch of a material such as rice straw can be applied to reduce weed emergence and to reduce surface water loss.
+
+The seeds can be mixed with sand or ash to make sowing easy. Seed is sown in rows 30 - 45 cm apart, the young plants are thinned to approximately 20-25 cm apart within the rows depending on the vigour of the cultivar once the germination is complete to maintain the desired plant population. Adequate water should be available during the crop's production as required when rainfall is not sufficient. Approximately 10-12 kg of seeds are required for each hectare.
+
+## Beet
+
+Beet can be grown in a wide range of soils, but light soils produce better crops than heavier ones. The pH range most suitable for production is around 6.0-7.0, but beet can be grown even in more alkaline (pH 9-10) soils.
+
+The seeds are sown by broadcasting, drilling, or dibbling. They are sown in rows that are 30-45 cm apart. A plant-to-plant distance of 5-20 cm is maintained, depending upon the variety and soil type. When the seeds are broadcasted, thinning of seedlings may be necessary. In general, about 12-15 kg of seed may be needed per hectare.
+
+## Taro
+
+Taro is a tropical crop and can be grown even in heavy soils. It prefers abundant water supply and can withstand waterlogging. The optimum soil pH range is 5.5-7.0.
+
+Taro is vegetatively propagated. About 1 cm corm tips with 15-20 cm petioles are used which produce higher yields than corms as planting material. Cormels are also used as planting material in many areas. The cormels are preferred in places where winter is severe for the convenience of storing till the next planting season.
+
+Land preparation varies from place to place. The land may be puddled, or ridges and furrows may be constructed or beds may be made for planting. The distance of planting ranges from 5 to 10 cm. A spacing of 60 ? 45 cm is followed in India. Spacing can be closer in lowlands than in uplands because water may not be a limiting factor. The planting is done during the rainy season, but it can be done any time if irrigation facilities are available. In temperate regions, planting is avoided during the winter.
+
+## Yam
+
+Yam is mainly grown in tropical and subtropical regions. However, the major yam-growing areas are in the tropical regions. The optimum temperature for yam growth is between 25 and 30$\ ^oC$. High rainfall favors good growth of tubers. Tuber growth depends on the texture and preparation of the soil; Well-drained, loose friable soil containing adequate organic matter is preferred for yam cultivation.
+
+Yam is propagated vegetatively using tuber pieces or small whole tubers as planting material. The size and weight of tuber pieces at planting influence the yield. Multiplication of yams by vine cuttings is also possible, but tuber production by this method is low. Tissue culture has been used for clonal propagation of yams.
+
+Yams are planted in flat or raised beds or mounds formed over pits. The seed tubers are planted at a depth of 10-15 cm. Seed tubers weighing 10-250 g are used for planting. A spacing of 75 ? 75 cm or 90 ? 90 cm is followed for optimum yield.
+
+The plant requires a high dose of nitrogen and potassium. The FYM at 30 t/ha is applied during planting. Economic fertilizer dose as described in some study was, 25 tons of FYM and 40 kg of N, 40 kg of P, and 80 kg of K per hectare. A first application at planting with a full dose of P and half-dose of N and K along with FYM encourages rapid development at the early stage. A second application of the remaining N and K should be done 60-70 days after emergence of shoots.
+
+
+# Field preparation for Leafy vegetable crops {-}
+
+## Broad leaf mustard
+
+Crop is sown and transplanted in high hills in between Falgun and Ashar, while in terai Ashoj-Mangsir sowing/transplanting is practiced.
+
+Land is initially ploughed 2-3 times, plods are broken, weeds and stubbles are removed. Since the seeds are very fine, a well prepared seed bed should be free of large chunks of soil and be well levelled. When grown as rainy season crop, good drainage system should be ensured by planting in ridges, and using furrows as drainage channels.
+30 g of seed is enough for planting a ropani of land. A planting distance of 45 x 30 cm is usually mantained.
+
+## Spinach
+
+Spinach grows best in sandy loam or alluvial soils. However, it can be grown in any good soil with pH between 7.0 and 10.5. Spinach is propagated by seed. The crop sown in spring-summer usually has a greater tendency to bolt. The seeds are either broadcast or sown in rows, with a row-to-row spacing of 20-22 cm to encourage optimum plant growth. The recommended sowing depth is about 3.5-4.0 cm for both kinds of seeds. The seed rate varies with the method of sowing and species. In spinach about 1-1.5 kg of seeds are required for one acre. Due to its dioeceous nature and because male plants grow poorly, spinach requires a higher seed rate than spinach beet ( _palak_ ). Proper land preparation and adequate soil moisture are needed to ensure satisfactory germination.
+
+Spinach beet can tolerate slightly alkaline soil. It is a highly salt-tolerant vegetable and can be grown successfully in saline soils. After preparing soil thoroughly, seedbeds of convenient size and irrigation channels are prepared. Seeds are soaked in water overnight to hasten germination. The sowing is done either by broadcasting or in rows 34 cm deep. If optimum soil moisture and temperature are present, seeds will germinate about 10 days after sowing. In case of insufficient soil moisture, a light irrigation should follow the sowing to ensure good germination.
+
+## Amaranthus
+
+The soil should be brought to a fine tilth by repeated ploughing and working and beds of desirable size (3 m ? 2 m) are made, keeping in mind the irrigation facilities. The seeds are sown by broadcasting or in rows 20-30 cm apart to get 75 or 45 plants per $m^2$, respectively. About 1.5-2.0 kg of seeds are required for one hectare of land. Amaranths need ample soil moisture and timely hoeing and weeding.
+
+## Fenugreek
+
+Methi, particularly the Kasturi methi, is a cool season crop. Its growth is affected under warm climate.
+Therefore, in the plains, it is grown during winter. Successful methi production needs ample water supply and
+rich medium heavy soils. The seeds are sown in beds by broadcasting or in rows. The common bed size for methi is 3 ? 2 m and the recommended row-to-row spacing is about 20-25 cm. The seed rate for Kasturi methi is 11.3-14.00 kg/acre and for common methi about 18.0 kg for the same area. The soil moisture level should be adequate to ensure satisfactory germination.
+
+# Field preparation for Tuber and Bulb crops {-}
+
+## Potato
+
+The soil factors that influence tuber growth are structure, water-holding capacity, aeration, temperature, drainage, and the nutrient-supplying capacity of the soil. Potatoes can be grown in all types of soil except saline and alkaline soils. Sandy loam and loamy soils rich in organic matter are most suitable for potato cultivation. In general, loam soil produces high-specific gravity tubers, probably because they have optimum soil moisture and uniform temperature and structure relationships for potato production than heavy-textured soils. Sandy soils are conducive to rapid growth, provided sufficient nutrients and moisture are present, resulting in early maturity of the crop. Soils that are too sandy and especially those low in organic matter usually are not desirable for high yields, as a result of their low water-holding capacity. To obtain high yields, soil should be loose and friable with good drainage and aeration. Potatoes do not grow well on heavy textured or undrained soils. Potatoes grown on some fertile clay soils may produce good yields, but not on sticky soils that hinder digging and marketing of potatoes due to the soil adhering to them.
+
+Potatoes require a uniform supply of moisture throughout the growing season for maximum yields. The most critical period is at the beginning of tuberization. Excess soil moisture may, however, produce low dry matter yields. Fluctuation in soil moisture tends to promote unequal growth in vines and tubers, resulting in lower yields. The soil moisture should be maintained at about 60% of field capacity for optimum yields. To obtain potatoes high in dry matter, water is withheld late in the season to help them become mature at harvest. The specific gravity of the tubers is reduced when they are supplied with excessive irrigation late in the season.
+
+The sensitivity of potato plants to soil aeration has been well demonstrated. Potato plants respond well in soils that have 50% or more pore or air space. The optimum soil pH for potatoes is about 5.05.5. Acidic soil conditions tend to limit potato scab disease, which is favored by alkalinity. Successful production of potatoes can be achieved on soils with neutral or alkaline pH. The effects of soil pH on potato yield are probably associated with the availability and uptake of plant nutrients.
+
+
+## Garlic
+
+A wide range of soils with good drainage can be employed for garlic cultivation. The soil depth should be at least 45-60 cm. Garlic requires medium black, well-drained loamy soils, rich in humus with fairly good potash content. Crops raised on sandy or loose soils have poor keeping quality and the bulbs produced are lighter in weight. Bulbs produced in heavy soils are deformed and during harvest many bulbs are broken and bruised. Bulbs become badly discolored ill-drained soil. Acidic soils are not good for clove development, however, a pH range between 5 and 7 had little effect on growth and yield.
+
+Garlic is propagated by planting cloves that have been stored at 5?C for several months. The size of the seed clove is important larger cloves give higher yield. The seed should be virus-free. Cloves for planting should weigh 3.6-5.8 g. Bigger bulbs may be produced for consumption and
+small bulbs for planting purposes. The size of bulbs can be regulated by plant spacing. Close spacing produces
+smaller bulbs. It is recommended that 400-500 kg of cloves be used per hectare for tropical regions. 
+
+Planting of garlic is done by different methods, which includes dibbling, furrow planting, broadcasting, and transplanting. Soaking garlic cloves in 0.01, 0.05, or 0.1% solutions of $ZnSO_4$ or $MnSO_4$ induced more vigorous growth of the aerial parts than soaking in distilled water. $MnSO_4$ at 0.01% and $ZnSO_4$ at 0.1% produced the highest yields. The highest yield was produced from 5.0 g of cloves planted at 30 x 6 cm, and the best quality crop was obtained from 5.0 g of cloves planted at 30 x 12 cm. The highest yields (16.2 t/ha) of autumn-planted garlic were obtained by planting aerial bulbils of >5 mm diameter with the scapes removed; a yield of 12.8 t/ha was obtained from bulbils planted with the scapes attached.Numerous studies show that both yield and the size of harvested bulbs increases with planted clove weight.
+
+Garlic responds well to organic manure. A good yield was achieved with an application of 40-50 t of farmyard manture (FYM) per hectare. Nitrogen plays an important role in early vegetative growth.
+
+# Field preparation for Legume vegetable crops {-}
+
+## French bean
+
+French bean is a crop that grows and yields best on loamy or sandy loamy soils. However, it can be easily grown on many other soil types both lighter or heavier than loamy soils. Soils that are very rich in organic matter promote more vegetative growth at the cost of pod production. The soil pH should never be lower than 5.5. The ideal pH range is 6.0-6.8.
+
+The land is prepared by ploughing 20-25 cm deep, followed by harrowing and leveling. The best time for sowing French bean depends upon the place and the weather conditions. In general, in plains they are sown from August to October (autumn-winter), and in hills they are typically sown from April to June. The seeds are broadcast, drilled, or dibbled. The recommended spacing for French bean is 45-90 cm between rows by 7.5-10 cm within the row. The tall and spreading varieties are sown further apart. Two to three seeds are sown together about 2.5-5.0 cm deep. The total seed requirement varies with the variety, spacing, and seed size. In general, about 40-50 kg of seeds of small-seeded types or 60-90 kg of seeds of larger-seeded types are needed for one hectare. Some growers maintain a plant-to-plant distance of 20-30 cm within the row and 60-95 cm between rows. The trailing type of French beans are sown 1.0 ? 1.0 m apart. This crop can also be grown as a mixed crop with field crops like cotton, sugarcane, turmeric, etc.
+
+
+# Field preparation for Fruit vegetable crops {-}
+
+## Eggplant
+
+Eggplant can be grown on a wide variety of soils. The major soil considerations are texture, drainage, fertility, and depth. Rich and well-drained loamy soils are ideal for eggplant cultivation, but it also grows very well in silt-loam and clay-loam soils. The ideal pH range is between 5.5 and 6.0. Since the crop remains in the field for nearly 4-5 months, soils rich in organic matter and nutrients are preferred.
+
+The soil needs to be well prepared by repeated ploughing and harrowing. Beds of convenient length and width or ridges and furrows are prepared and seedlings about 10-15 cm tall are transplanted. The spacing depends on the variety, soil fertility, and location. In general, the most common spacing used is 60-90 ? 45 cm and tall varieties are planted further apart. Seedlings take about 8-10 days for reestablishment. Some growers transplant the seedlings in raised beds.
+
+The seedlings are raised in nurseries on raised beds. The seeds are sown in shallow rows across the length of the bed. The first irrigation is given immediately after sowing, with subsequent irrigations given as necessary. In general, regular irrigations are performed until seedlings are about 5 cm tall, after which frequent irrigations should be avoided to harden the seedlings. Irrigating the nursery bed every 11th or 12th day increases the productivity of the plants when transplanted.
+
+In the plains, eggplant can be grown almost throughout the year. The first crop is sown during February-March, the second crop in May-June, and the third during October-November. The ideal sowing time in the hills is April-May.
+
+# Field preparation for Cucurbitaceous crops {-}
+
+## Cucumber and melons
+
+Cucumber can be grown successfully on many kinds and classes of soil from sandy to heavy clay. Sandy loams are considered best for early crops, whereas heavy clay soils produce high yields. Soil should be well drained. Cucumber can be grown successfully on slightly acid soils. Optimum soil pH varies from 5.5 to 6.8. Cucumber seed does not germinate at 11$\ ^oC$, but it may remain in cold soil for a long time and then germinate when temperature becomes favorable. A very good crop can also be raised on river beds, provided sufficient organic manure is applied.
+
+Field is ploughed 2-3 times, and soil is made friable. Beds of 1.5 m width in summer season crop, and 2 m width in rainy season crop are suitable for conducting interculture operations, and for managing irrigation. 30 cm space should be left between two beds, which themselves are raised 15 cm above the surface.
+
+Sowing can be done on raised beds, in furrows, or in pits according to the system followed. Two seeds per hill are generally sown on both sides of the beds. In garden soil, furrows are made at 1-1.5 meters spacing (row-to-row distance 1-1.5 m; plant-to-plant 50-60 cm). In case of a pit system, pits 45 ? 45 cm (about 60 cm deep) are dug at proper spacing and filled with farmyard manure (FYM) or cattle manure and earth in equal proportions. Three to four seeds per pit are sown.
+
+For pumpkin, a bit wider beds (2m wide) are prepared. The seeds can be sown directly or in the pits.
+
+For bitter gourds, two row beds (each 2-2.5 m wide) are prepared, where pits (30x30x30) are dug and the seed drilled in at spacing of 100-150 x 100 cm R-R x P-P.
+
+# Field preparation for Perennial vegetable crops {-}
+
+## Asparagus
+
+Asparagus is one of the few perennial vegetables. As the crop continues to spear for long period after establishment, initial land preparation and subsequent soil mananagement operations have considerable importance for a good yearly production.
+
+Well-drained, light-textured soils with high contents of organic matter are most suitable for asparagus cultivation. The spears should emerge from the soil without damage. A cool season with a mean air temperature of 16-24$\ ^oC$ favors crop growth. The crop should be protected from freezing. 
+
+The asparagus crop is either direct-seeded or one-year-old crowns are transplanted in the field. Seeds are drilled 2.5-5 cm deep in furrows 15-20 cm below ground level for direct seeding. Crowns are transplanted 20-25 cm below ground level and 30 cm apart. The distance between rows is 1.8 m for green asparagus and 2-2.5 m for white asparagus.
+
+Seedlings are raised from good-quality seeds and used for planting. Young plants seeded the previous year, called crowns, are removed in the spring before growth start and planted in the field within a few hours. Potassium and phosphorus are added to the soil before planting the crowns. Nitrogen is used for top-dressing. A fertilizer dose of 65-90 kg of N, 35 kg of P, and 35 kg of K per hectare has been recommended.
+
+
+# Field preparation for Spice crops
+
+## Ginger
+
+The crop performs well in warm and shaded place, with well drained soil and plenty of organic matter. Sandy loam soils are the soil types of choice. Heavy soils are not preferred because they may lead to prolonged water logged conditions during rain. The crop is nutrient exhaustive, so fertilizer enrichment of the soil during each crop cycle is essential.
+
+A gentle slope that allows for good drainage is preferred for the selection of site. The compost/FYM should be incorporated at the time of final land preparation, generally at the start of rainy season. In places where acceptable mositure prevails, crop can be successfully raised even during early summer (in mid-hills).
+
+Seed rhizomes of dimension 50-60 cm are planted 300 kg (for large seed rhizomes) - 200 kg (for small seed rhizomes) in a ropani of land. In fields where drainage is a problem, planting is carried out in raised beds (15 cm high) of 1-1.2 m width. A row to row distance of 30-40 cm and a between plant distance of 25-30 cm is mantained.

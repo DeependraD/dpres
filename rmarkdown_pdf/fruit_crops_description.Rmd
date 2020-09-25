@@ -1,0 +1,45 @@
+---
+title: Fruit crops
+subtitle: "Some major, minor, underexploited and rising ones"
+author: "Deependra Dhakal"
+date: "`r Sys.Date()`"
+output: tint::tintPdf
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+library(tufte)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'), 
+                      echo = FALSE)
+options(htmltools.dir.version = FALSE)
+```
+
+# Macademia nut
+
+## Introduction
+
+Macadamia is an evergreen genus that grows 2-12 m (7-40 ft) tall. The leaves are arranged in whorls of three to six, lanceolate to obovate or elliptic in shape, 6-30 cm (2-10 in) long and 3-13 cm (1-5 in) broad, with an entire or spiny-serrated margin. The flowers are produced in a long, slender, simple raceme 5-30 cm (2-10 in) long, the individual flowers 10-15 mm (0.4-0.6 in) long, white to pink or purple, with four tepals. The fruit is a hard, woody, globose follicle with a pointed apex, containing one or two seeds.
+
+- _Macadamia integrifolia_ Maiden & Betche
+- _Macadamia jansenii_ C.L.Gross & P.H.Weston
+- _Macadamia ternifolia_ F.Muell.
+- _Macadamia tetraphylla_ L.A.S.Johnson
+
+Nuts from _M. jansenii_ contain toxic amounts of cyanogenic glycosides, The other three species are cultivated in the commercial production of macadamia nuts for human consumption.
+
+Previously, more species with disjunct distributions were named as members of this genus Macadamia. Genetics and morphological studies published in 2008 show they have separated from the genus Macadamia, correlating less closely than thought from earlier morphological studies. The species previously named in the genus Macadamia may still be referred to overall by the descriptive, non-scientific name of macadamia.
+
+Three of the four species -- _Macadamia integrifolia_, _Macadamia ternifolia_, and _Macadamia tetraphylla_ -- are of commercial importance. The other species, _M. jansenii_, produces poisonous nuts resulting from toxic amounts of cyanogenic glycosides.
+
+## Cultivation
+
+The macadamia tree is usually propagated by grafting, and does not begin to produce commercial quantities of seeds until it is 7-10 years old, but once established, may continue bearing for over 100 years. Macadamias prefer fertile, well-drained soils, a rainfall of 1,000-2,000 mm (40-80 in), and temperatures not falling below $10^\circ C$ ($50^\circ F$) (although once established, they can withstand light frosts), with an optimum temperature of $25^\circ C$ ($80^\circ F$). The roots are shallow and trees can be blown down in storms; they are also susceptible to Phytophthora root disease.
+
+Cultivars: Beaumont, Maroochy, Nelmac II, Renown
+
+## Food and nutrition^[https://en.wikipedia.org/wiki/Macadamia]
+
+The seeds (nuts) are a valuable food crop. In a 100-gram amount, macadamia nuts provide 740 Calories and are a rich source (20% or more of the Daily Value, DV) of numerous essential nutrients, including thiamin (104% DV), vitamin B6 (21% DV), manganese (195% DV), iron (28% DV), magnesium (37% DV), and phosphorus (27% DV) (table). Macadamia nuts are 76% fat, 14% carbohydrates, including 9% dietary fiber, and 8% protein.
+
+Compared with other common edible nuts, such as almonds and cashews, macadamias are high in total fat and relatively low in protein. They have a high amount of monounsaturated fats (59% of total content, table) and contain, as 17% of total fat, the monounsaturated fat, omega-7 palmitoleic acid.

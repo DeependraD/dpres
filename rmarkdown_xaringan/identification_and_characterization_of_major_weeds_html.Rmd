@@ -1,0 +1,355 @@
+---
+seal: false
+output: 
+  xaringan::moon_reader:
+    self_contained: false
+    lib_dir: common_libs
+    nature:
+      ratio: "16:9"
+    css: ["css/nipo.css", "css/styles.css", "css/ninjutsu.css", "css/kunoichi.css"]
+---
+background-image: url("../images/boat-blue-whale-mexico.jpg")
+background-size: cover
+
+<img src="../images/dragonfly_land.jpg" style="position:absolute; top:2%; right:2%;width:200px">
+
+<br>
+
+.content.vmiddle.center[
+# .big[Identification and Characterization of Major weeds of selected field crops]
+]
+
+.sliderbox.vmiddle.shade_main.center[
+
+### Deependra Dhakal `r anicon::faa('twitter', animate = 'float', rtext='dd_rookie', color='white')` 
+
+### `r anicon::faa('link', animate='vertical', rtext='&nbsp;rookie.rbind.io/contacts', color='white')`
+]
+
+
+---
+class: hide-slide-number center middle
+background-color: #348931
+
+# Introduction
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(tidy = TRUE, cache = TRUE, 
+                      echo = FALSE, 
+                      tidy.opts = list(width.cutoff=50), 
+                      eval = TRUE, 
+                      fig.show = "hold",  fig.align = "center", 
+                      fig.asp = 0.6, message = FALSE, warning = FALSE)
+options(knitr.kable.NA = "", digits = 3)
+options(htmltools.dir.version = FALSE)
+
+library(ggplot2)
+library(magrittr)
+library(dplyr)
+livedemosign <- function(top, left, deg) {
+  htmltools::div("Live Demo!", class="faa-flash animated",
+                 style=glue::glue("border:solid; border-color:black; position:absolute; top:{top}%; left:{left}%; font-size:36px; padding:4px; background-color:white; color:black;transform:rotate({deg}deg);")
+  )
+}
+
+```
+
+- Globally, weeds cause upto 40% reduction in yields of all major cultivated crops. The extent of weed associated loss is, however, variable depending upon the cultivated crop species. There have been numerous definitions of weeds. Older ones include: 
+
+> _"a plant not valued for its use or beauty"_
+<br>
+_"a plant whose virtues have yet to be discovered"_
+<br>
+-- Old quotes
+
+.pull-left.mediumish[
+- However, most modern definitions convey an opinion that the plants are considered undesirable in some way.
+
+- This leads to the understanding that crops may at some time also be weeds. For example, the grass plants growing in the domestic garden lawn are acceptable and encouraged, but when they spread to the adjacent flowerbed they are considered weeds. Similarly, crop seeds which are shed in the field can grow in subsequent crops in following years and contaminate them. The definition of weeds adopted by the European Weed Science Society is: ]
+
+.pull-right[
+
+> _"any plant or vegetation, excluding fungi, interfering with the objectives or requirements of people"_
+<br>
+-- EWSS
+
+- Similarly the Weed Science Society of America has adopted the definition: 
+
+> _"a plant growing where it is not desired"_
+<br>
+-- WSCA
+
+]
+
+```{r}
+# style_extra_css(outfile = "xaringan-themer.css", 
+#                 css = list(".red" = list(color = "red"), 
+#                            ".small" = list("font-size" = "90%"), 
+#                            ".full-width" = list(
+#                              display = "flex",
+#                              width = "100%", 
+#                              flex = "1 1 auto"
+#                            )), 
+#                 heading = "Extra CSS by DD", 
+#                 append = TRUE)
+# 
+# ?style_duo()
+```
+
+---
+class: center, middle, inverse
+
+# What features makes a plant a weed
+
+---
+
+```{r weedification, cache=TRUE}
+DT::datatable(readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "reasons", skip = 1), 
+              fillContainer = FALSE, options = list(pageLength = 8))
+```
+
+---
+class: center, middle, inverse
+
+# Seasonality and dormancy of weeds
+
+---
+
+```{r dormancy, fig.width=6, fig.fullwidth=TRUE, out.width="100%", fig.cap="Dormancy and growth of annual weeds", cache=TRUE}
+# pdftools::pdf_convert("~/../Downloads/Robert E. L. Naylor-Weed Management Handbook-Wiley-Blackwell (2002).pdf", format = "jpeg", pages = 63, dpi = 250)
+
+knitr::include_graphics("../images/weed_identification/seasonality_and_dormancy_weeds.jpeg")
+```
+
+---
+class: center, middle, inverse
+
+# Major weeds of Rice
+---
+
+
+```{r rice-weeds1}
+knitr::kable(readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_rice", skip = 1, col_names = FALSE), caption = "Major weeds of Rice crop", col.names = c("Scientific name", "Local name"), format = "html")  %>%
+  kableExtra::column_spec(column = 1, italic = TRUE) %>% 
+  kableExtra::kable_styling(full_width = TRUE, bootstrap_options = "striped", font_size = 18)
+```
+
+---
+class: split-two
+
+<div>
+
+## Images of rice weeds
+
+</div>
+
+.column[.bg-main1[
+
+```{r rice-weeds-image1, fig.width=5, out.width="100%"}
+knitr::include_graphics("../images/weed_identification/Alternanthera_pungens.jpg")
+knitr::include_graphics("../images/weed_identification/Alternanthera_pungens2.jpg")
+knitr::include_graphics("../images/weed_identification/pigeon_pea/Commelina_benghalensis.jpg")
+knitr::include_graphics("../images/weed_identification/Eclipta_alba.jpg")
+knitr::include_graphics("../images/weed_identification/Eclipta_prostrata.jpg")
+knitr::include_graphics("../images/weed_identification/Eichhornia_crassipes.jpg")
+knitr::include_graphics("../images/weed_identification/Eichhornia_crassipes2.JPG")
+knitr::include_graphics("../images/weed_identification/Ipomoea_aquatica.jpg")
+knitr::include_graphics("../images/weed_identification/Lippia_nodiflora.JPG")
+knitr::include_graphics("../images/weed_identification/Lippia_nodiflora2.jpg")
+```
+]]
+
+.column[.content.bg-main1[
+
+```{r rice-weeds-image2, fig.width=5, out.width="100%"}
+knitr::include_graphics("../images/weed_identification/Echinochloa_colona.jpg")
+knitr::include_graphics("../images/weed_identification/Eleusine_indica.jpg")
+knitr::include_graphics("../images/weed_identification/Paspalum_distichum.jpg")
+knitr::include_graphics("../images/weed_identification/Panicum_repens.jpg")
+knitr::include_graphics("../images/weed_identification/Panicum_repens2.jpg")
+knitr::include_graphics("../images/weed_identification/Monochoria_vaginalis.JPG")
+knitr::include_graphics("../images/weed_identification/Lemna_minor.JPG")
+knitr::include_graphics("../images/weed_identification/Rotala_rotundifolia.jpg")
+knitr::include_graphics("../images/weed_identification/Polygonum_hydropiper.JPG")
+```
+]]
+
+---
+class: inverse, middle, center
+
+# Major weeds of Maize
+
+---
+
+```{r maize-weeds}
+knitr::kable(readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_maize", skip = 1, col_names = FALSE), caption = "Major weeds of Maize crop", col.names = c("Scientific name", "Local name"), format = "html") %>%
+  kableExtra::column_spec(column = 1, italic = TRUE) %>% 
+  kableExtra::kable_styling(full_width = TRUE, bootstrap_options = "striped", font_size = 18)
+```
+
+---
+
+## Images of Maize weeds
+
+```{r maize-weeds2, fig.width=5, out.width="100%"}
+knitr::include_graphics("../images/weed_identification/soybean/amaranthus_spinosus.jpg")
+knitr::include_graphics("../images/weed_identification/pigeon_pea/amaranthus_viridis.jpg")
+knitr::include_graphics("../images/weed_identification/Celosia_argentea.jpg")
+knitr::include_graphics("../images/weed_identification/Digitaria_sanguinalis.jpg")
+knitr::include_graphics("../images/weed_identification/Paspalum_distichum.jpg")
+knitr::include_graphics("../images/weed_identification/Eleusine_indica.jpg")
+knitr::include_graphics("../images/weed_identification/pigeon_pea/cyperus_rotundus.jpg")
+knitr::include_graphics("../images/weed_identification/Brachiaria_reptans.jpg")
+```
+
+---
+class: inverse, middle, center
+
+# Major weeds of Wheat
+
+---
+
+```{r wheat-weeds}
+knitr::kable(readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_wheat", skip = 1, col_names = FALSE), caption = "Major weeds of Wheat crop", col.names = c("Scientific name", "Local name"), format = "html") %>%
+  kableExtra::column_spec(column = 1, italic = TRUE) %>% 
+  kableExtra::kable_styling(full_width = TRUE, bootstrap_options = "striped", font_size = 18)
+```
+
+---
+
+## Images of Wheat weeds
+
+```{r wheat-weeds2, fig.width=5, out.width="100%"}
+knitr::include_graphics("../images/weed_identification/Phalaris_minor.jpg")
+knitr::include_graphics("../images/weed_identification/Phalaris_minor_plant.JPG")
+knitr::include_graphics("../images/weed_identification/Chenopodium_album_plant.jpg")
+knitr::include_graphics("../images/weed_identification/Chenopodium_album_flowers.jpg")
+knitr::include_graphics("../images/weed_identification/Melilotus_alba_plant.jpeg")
+knitr::include_graphics("../images/weed_identification/Anagallis_arvensis.jpg")
+knitr::include_graphics("../images/weed_identification/Lathyrus_aphaca_plant.jpg")
+knitr::include_graphics("../images/weed_identification/Spergula_arvensis.jpg")
+knitr::include_graphics("../images/weed_identification/Vicia_sativa.jpg")
+```
+
+---
+class: inverse, middle, center
+
+# Major weeds of Millet
+
+---
+
+```{r millet-weeds}
+knitr::kable(readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_millet", skip = 1, col_names = FALSE), caption = "Major weeds of Millet crop", col.names = c("Scientific name", "Local name"), format = "html") %>% 
+  kableExtra::kable_styling(font_size = 18) %>% 
+  kableExtra::column_spec(1, italic = TRUE)
+```
+
+---
+class: inverse, middle, center
+
+# Major weeds of pigeon pea
+
+---
+
+```{r pigeonpea-weeds}
+# pigeon_weeds <- gsub(pattern = "_", replacement = " ", stringr::str_to_title(list.files("./images/weed_identification/pigeon_pea/"))) %>% 
+#   stringr::str_split(pattern = "\\.") %>% 
+#   map_chr(.f = c(1)) %>% cbind %>% as_tibble() %>% set_names(nm = "Weeds")
+
+pigeon_weeds <- structure(list(Weeds = c("Amaranthus viridis", "Celosia argentena", 
+"Commelina benghalensis", "Cyperus rotundus", "Digitaria longiflora", 
+"Echinochloa spp", "Euphorbia hirta")), .Names = "Weeds", row.names = c(NA, 
+-7L), class = c("tbl_df", "tbl", "data.frame"))
+
+knitr::kable(pigeon_weeds, caption = "Major weeds of Pigeon pea crop", format = "html") %>% 
+  kableExtra::column_spec(1, italic = TRUE) %>% 
+  kableExtra::kable_styling(font_size = 18)
+```
+
+---
+
+## Images of pigeon pea weeds
+
+```{r pigeonpea-weeds2, fig.width=5, out.width="100%"}
+knitr::include_graphics(list.files("../images/weed_identification/pigeon_pea/", full.names = TRUE))
+```
+
+---
+
+## Weed management in pigeon pea
+
+- For short season pigeonpea, the first 30 days appear critical, although this period may vary with the genotype and time of sowing. One hand weeding at 45 DAS is not as effective as two weedings at 25 and 45 days after sowing. A number of herbicides have been found useful for pigeonpea systems. The following PRE herbicides are very effectiv in minimizing weed problem:
+
+```{r pigeonpea-herbicides}
+knitr::kable(readxl::read_xlsx("../data/weed_identification/weed_management.xlsx", sheet = "herbicides_pigeonpea", skip = 1, col_names = FALSE), caption = "Herbicidal control of pigeonpea weeds", col.names = c("Pre emergence herbicides"), format = "html")
+```
+
+---
+
+- Paraquat can be used to control weeds that have already germinated at the time of sowing. There may not be any toxic effect to crop even when paraquat is applied 4 days after sowing. It is common observation that herbicides are slightly inferior to hand weeding in pigeonpea. It is therefore, suggested to give a hand weeding at 40 to 45 days after sowing. It is common observation that herbicides are slightly inferior to hand weeding in pigeonpea. It is therefore, suggested to give a hand weeding at 40 to 45 days after sowing in herbicide applied fields. Marginal superiority of Oxadiazon and Pendimethalin herbicides has been indicated, since they are effectve for longer period than others recommended for weed control in pigeonpea.
+
+---
+class: inverse, middle, center
+
+# Major weeds of lentil
+
+---
+
+```{r lentil-weeds}
+knitr::kable(readxl::read_xlsx("../data/weed_identification/weeds.xlsx", sheet = "weeds_lentil", skip = 1, col_names = TRUE), caption = "Major weeds of Lentil crop", col.names = c("Scientific name", "Local name"), format = "html") %>% 
+  kableExtra::column_spec(1, italic = TRUE)
+```
+
+---
+class: inverse, middle, center
+
+# Major weeds of soybean
+
+---
+
+```{r soybean-weeds}
+# soybean_weeds <- gsub(pattern = "_", replacement = " ", stringr::str_to_title(list.files("./images/weed_identification/soybean/"))) %>%
+#   stringr::str_split(pattern = "\\.") %>%
+#   map_chr(.f = c(1)) %>% cbind %>% as_tibble() %>% set_names(nm = "Weeds")
+
+soybean_weeds <- structure(list(Weeds = c("Amaranthus spinosus", "Brachiaria reptans", 
+"Phyllanthus niruri", "Trianthema portulacastrum")), .Names = "Weeds", row.names = c(NA, 
+-4L), class = c("tbl_df", "tbl", "data.frame"))
+
+knitr::kable(soybean_weeds, caption = "Major weeds of Soybean crop", format = "html") %>% 
+  kableExtra::column_spec(1, italic = TRUE)
+```
+
+---
+
+## Images of Soybean weeds
+
+```{r soybean-weeds2, fig.width=5, out.width="100%"}
+knitr::include_graphics(list.files("../images/weed_identification/soybean/", full.names = TRUE))
+```
+
+---
+
+## Weed management in soybean
+
+.pull-left[
+- First 6 to 7 weeks after seeding is the critical period for crop weed completion. Clean cultivation is, therefore, essential during the critical period.
+
+- Cultural Management: Since soybean is sown in rows, bullock drawn harrows can be used for controlling the weeds. Two intercultivations, first at 20-30 DAS and the second around 45 DAS along with manual weeding can maintain the soybean field weed free for economic yield
+
+- Use of Herbicides: A wide range of soil and foliage applied herbicides provides moderate to excellent of wide range of weeds infesting soybean crop.
+]
+
+.pull-right[
+
+```{r chemical-herbicides}
+knitr::kable(readxl::read_xlsx("../data/weed_identification/weed_management.xlsx", sheet = "herbicides_soybean", skip = 1, col_names = TRUE), caption = "Herbicidal control of soybean weeds", format = "html") %>% 
+  kableExtra::kable_styling(font_size = 10, bootstrap_options = "striped") %>% 
+  kableExtra::column_spec(1, color = "white", background = "#97161d") %>% 
+  kableExtra::column_spec(2, color = "white", background = "#67161d")
+```
+
+- Combination of Trifuralin and alachlor or Triallate(1.0-1.5) applied PPI is the best for season long weed control. PRE combination of Pendimethalin(0.5 -0.75) and Imazethapyr(50-75g) is also equally effective for weed free environment.
+]
