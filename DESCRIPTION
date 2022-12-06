@@ -1,0 +1,16 @@
+Package: dpres
+Title: Presentations Slides Renderings
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Deependra",
+           family = "Dhakal",
+           role = c("aut", "cre"),
+           email = "dean.ionized@gmail.com",
+           comment = c(ORCID = ""))
+Description: This is a host of life science and other uncategorized presentations
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
